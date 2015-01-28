@@ -1,0 +1,59 @@
+  @include font-face("Myriad Pro Regular", font-files("client/fonts/myriad-web-pro/myriad-web-pro.svg","/Projects/Singolo/client/fonts/myriad-web-pro/myriad-web-pro.woff","/Projects/Singolo/client/fonts/myriad-web-pro/myriad-web-pro.eot","/Projects/Singolo/client/fonts/myriad-web-pro/myriad-web-pro.otf","/Projects/Singolo/client/fonts/myriad-web-pro/myriad-web-pro.ttf"));//http://compass-style.org/examples/compass/css3/font-face/  
+/* @font-face {
+	font-family: 'Myriad Pro Regular';
+	src: url('/Projects/Singolo/client/fonts//myriad-web-pro.eot');
+	src: local('☺'), url('/Projects/Singolo/client/fonts/myriad-web-pro.woff') format('woff'), url('/Projects/Singolo/client/fonts/myriad-web-pro.ttf') format('truetype'), url('/Projects/Singolo/client/fonts/myriad-web-pro.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+} */
+//@include font-face("Lato-Bold", font-files("/Projects/Singolo/client/fonts/Lato-Bold.ttf","/Projects/Singolo/client/fonts/Lato-Bold.eot","/Projects/Singolo/client/fonts/Lato-Bold.woff","/Projects/Singolo/client/fonts/Lato-Bold.svg","/Projects/Singolo/client/fonts/Lato-Bold.otf"));//http://www.fontsquirrel.com/fonts/LATO
+
+/* latin-ext */
+@font-face {
+  font-family: 'Lato Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://fonts.gstatic.com/s/lato/v11/dPJ5r9gl3kK6ijoeP1IRsvY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://fonts.gstatic.com/s/lato/v11/EsvMC5un3kjyUhB9ZEPPwg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://fonts.gstatic.com/s/lato/v11/ObQr5XYcoH0WBoUxiaYK3_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://fonts.gstatic.com/s/lato/v11/H2DMvhDLycM56KNuAtbJYA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@include font-face("Lato-Black", font-files("/Projects/Singolo/client/fonts/lato-black/Lato-Black.ttf","/Projects/Singolo/client/fonts/lato-black/Lato-Black.eot","/Projects/Singolo/client/fonts/lato-black/Lato-Black.woff","/Projects/Singolo/client/fonts/lato-black/Lato-Black.svg","/Projects/Singolo/client/fontslato-black//Lato-Black.otf"));

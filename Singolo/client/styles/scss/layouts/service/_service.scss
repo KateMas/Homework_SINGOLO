@@ -1,0 +1,36 @@
+.services {
+	background-color: #f2f2f2;
+	height:501px;
+	color:#666d89;
+	padding-left:39px;
+	padding-right:40px;
+	h2 {
+		font-family: "Lato-Black";
+		padding-top: 66px;
+		padding-bottom:32px;
+		font-size: 30px;
+	}
+	p {
+		font-size: 18px;
+		font-family: "Lato Light";
+		line-height: 30px;
+	}
+	figure {
+		padding-top:51px;
+		figcaption {
+			width: 305px;
+			display: inline-block;
+			img {
+
+			}
+			h3 {
+				font-size: 18px;
+				font-family: "Lato-Black";
+			}
+			p {
+				font-family: "Lato Regular";
+				font-size: 12px;
+			}
+		}
+	}
+}
