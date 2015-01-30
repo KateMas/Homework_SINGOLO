@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-/* line 5, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,52 +21,77 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
+.services-sprite, .services-bolb, .services-bubble, .services-heart, .services-pen, .services-phone, .services-services-s2bbb3d83b2, .services-star {
+  background-image: url('../../images/services-s8290cfa759.png');
+  background-repeat: no-repeat;
+}
+
+.services-bolb {
+  background-position: 0 0;
+}
+
+.services-bubble {
+  background-position: 0 -32px;
+}
+
+.services-heart {
+  background-position: 0 -60px;
+}
+
+.services-pen {
+  background-position: 0 -88px;
+}
+
+.services-phone {
+  background-position: 0 -120px;
+}
+
+.services-services-s2bbb3d83b2 {
+  background-position: 0 -152px;
+}
+
+.services-star {
+  background-position: 0 -335px;
+}
+
 @font-face {
   font-family: "Myriad Pro Regular";
-  src: url('/fonts/client/fonts/myriad-web-pro/myriad-web-pro.svg') format('svg'), url(/Projects/Singolo/client/fonts/myriad-web-pro/myriad-web-pro.woff) format('woff'), url(/Projects/Singolo/client/fonts/myriad-web-pro/myriad-web-pro.eot) format('embedded-opentype'), url(/Projects/Singolo/client/fonts/myriad-web-pro/myriad-web-pro.otf) format('opentype'), url(/Projects/Singolo/client/fonts/myriad-web-pro/myriad-web-pro.ttf) format('truetype');
+  src: url('../fonts/client/fonts/myriad-web-pro/myriad-web-pro.svg') format('svg'), url(/Projects/Singolo/client/fonts/myriad-web-pro/myriad-web-pro.woff) format('woff'), url(/Projects/Singolo/client/fonts/myriad-web-pro/myriad-web-pro.eot) format('embedded-opentype'), url(/Projects/Singolo/client/fonts/myriad-web-pro/myriad-web-pro.otf) format('opentype'), url(/Projects/Singolo/client/fonts/myriad-web-pro/myriad-web-pro.ttf) format('truetype');
 }
 /* @font-face {
 	font-family: 'Myriad Pro Regular';
@@ -130,7 +154,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* v1.0.5 */
 /* Core RS CSS file. 95% of time you shouldn't change anything here. */
-/* line 3, ../scss/lib/_rs.scss */
 .royalSlider {
   width: 600px;
   height: 400px;
@@ -138,17 +161,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   direction: ltr;
 }
 
-/* line 9, ../scss/lib/_rs.scss */
 .royalSlider > * {
   float: left;
 }
 
-/* line 13, ../scss/lib/_rs.scss */
 .rsWebkit3d .rsSlide {
   -webkit-transform: translateZ(0);
 }
 
-/* line 18, ../scss/lib/_rs.scss */
 .rsWebkit3d .rsSlide,
 .rsWebkit3d .rsContainer,
 .rsWebkit3d .rsThumbs,
@@ -162,14 +182,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-backface-visibility: hidden;
 }
 
-/* line 30, ../scss/lib/_rs.scss */
 .rsFade.rsWebkit3d .rsSlide,
 .rsFade.rsWebkit3d img,
 .rsFade.rsWebkit3d .rsContainer {
   -webkit-transform: none;
 }
 
-/* line 35, ../scss/lib/_rs.scss */
 .rsOverflow {
   width: 100%;
   height: 100%;
@@ -179,7 +197,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 43, ../scss/lib/_rs.scss */
 .rsVisibleNearbyWrap {
   width: 100%;
   height: 100%;
@@ -190,14 +207,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 52, ../scss/lib/_rs.scss */
 .rsVisibleNearbyWrap .rsOverflow {
   position: absolute;
   left: 0;
   top: 0;
 }
 
-/* line 58, ../scss/lib/_rs.scss */
 .rsContainer {
   position: relative;
   width: 100%;
@@ -205,19 +220,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 65, ../scss/lib/_rs.scss */
 .rsArrow,
 .rsThumbsArrow {
   cursor: pointer;
 }
 
-/* line 70, ../scss/lib/_rs.scss */
 .rsThumb {
   float: left;
   position: relative;
 }
 
-/* line 76, ../scss/lib/_rs.scss */
 .rsArrow,
 .rsNav,
 .rsThumbsArrow {
@@ -228,7 +240,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: opacity 0.3s linear;
 }
 
-/* line 85, ../scss/lib/_rs.scss */
 .rsHidden {
   opacity: 0;
   visibility: hidden;
@@ -238,7 +249,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: visibility 0s linear 0.3s,opacity 0.3s linear;
 }
 
-/* line 95, ../scss/lib/_rs.scss */
 .rsGCaption {
   width: 100%;
   float: left;
@@ -246,7 +256,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* Fullscreen options, very important ^^ */
-/* line 102, ../scss/lib/_rs.scss */
 .royalSlider.rsFullscreen {
   position: fixed !important;
   height: auto !important;
@@ -260,7 +269,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   right: 0 !important;
 }
 
-/* line 115, ../scss/lib/_rs.scss */
 .royalSlider .rsSlide.rsFakePreloader {
   opacity: 1 !important;
   -webkit-transition: 0s;
@@ -270,7 +278,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: none;
 }
 
-/* line 124, ../scss/lib/_rs.scss */
 .rsSlide {
   position: absolute;
   left: 0;
@@ -281,38 +288,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 100%;
 }
 
-/* line 135, ../scss/lib/_rs.scss */
 .royalSlider.rsAutoHeight,
 .rsAutoHeight .rsSlide {
   height: auto;
 }
 
-/* line 140, ../scss/lib/_rs.scss */
 .rsContent {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-/* line 146, ../scss/lib/_rs.scss */
 .rsPreloader {
   position: absolute;
   z-index: 0;
 }
 
-/* line 151, ../scss/lib/_rs.scss */
 .rsNav {
   -moz-user-select: -moz-none;
   -webkit-user-select: none;
   user-select: none;
 }
 
-/* line 156, ../scss/lib/_rs.scss */
 .rsNavItem {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.25);
 }
 
-/* line 160, ../scss/lib/_rs.scss */
 .rsThumbs {
   cursor: pointer;
   position: relative;
@@ -321,20 +322,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: 22;
 }
 
-/* line 167, ../scss/lib/_rs.scss */
 .rsTabs {
   float: left;
   background: none !important;
 }
 
-/* line 171, ../scss/lib/_rs.scss */
 .rsTabs,
 .rsThumbs {
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 178, ../scss/lib/_rs.scss */
 .rsVideoContainer {
   /*left: 0;
   top: 0;
@@ -351,7 +349,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: relative;
 }
 
-/* line 193, ../scss/lib/_rs.scss */
 .rsVideoFrameHolder {
   position: absolute;
   left: 0;
@@ -361,12 +358,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-transition: .3s;
 }
 
-/* line 201, ../scss/lib/_rs.scss */
 .rsVideoFrameHolder.rsVideoActive {
   opacity: 1;
 }
 
-/* line 204, ../scss/lib/_rs.scss */
 .rsVideoContainer iframe,
 .rsVideoContainer video,
 .rsVideoContainer embed,
@@ -380,7 +375,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* ios controls over video bug, shifting video */
-/* line 216, ../scss/lib/_rs.scss */
 .rsVideoContainer.rsIOSVideo iframe,
 .rsVideoContainer.rsIOSVideo video,
 .rsVideoContainer.rsIOSVideo embed {
@@ -390,7 +384,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-right: 44px;
 }
 
-/* line 225, ../scss/lib/_rs.scss */
 .rsABlock {
   left: 0;
   top: 0;
@@ -398,27 +391,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: 15;
 }
 
-/* line 233, ../scss/lib/_rs.scss */
 img.rsImg {
   max-width: none;
 }
 
-/* line 237, ../scss/lib/_rs.scss */
 .grab-cursor {
   cursor: url(../../images/grab.png) 8 8, move;
 }
 
-/* line 241, ../scss/lib/_rs.scss */
 .grabbing-cursor {
   cursor: url(../../images/grabbing.png) 8 8, move;
 }
 
-/* line 245, ../scss/lib/_rs.scss */
 .rsNoDrag {
   cursor: auto;
 }
 
-/* line 249, ../scss/lib/_rs.scss */
 .rsLink {
   left: 0;
   top: 0;
@@ -449,7 +437,6 @@ img.rsImg {
 * 
 ******************************/
 /* Background */
-/* line 22, ../scss/lib/_rs-default.scss */
 .rsDefault,
 .rsDefault .rsOverflow,
 .rsDefault .rsSlide,
@@ -464,7 +451,6 @@ img.rsImg {
 *  1. Arrows
 *
 ****************/
-/* line 38, ../scss/lib/_rs-default.scss */
 .rsDefault .rsArrow {
   height: 100%;
   width: 44px;
@@ -474,31 +460,26 @@ img.rsImg {
   z-index: 21;
 }
 
-/* line 46, ../scss/lib/_rs-default.scss */
 .rsDefault.rsVer .rsArrow {
   width: 100%;
   height: 44px;
 }
 
-/* line 51, ../scss/lib/_rs-default.scss */
 .rsDefault.rsVer .rsArrowLeft {
   top: 0;
   left: 0;
 }
 
-/* line 52, ../scss/lib/_rs-default.scss */
 .rsDefault.rsVer .rsArrowRight {
   bottom: 0;
   left: 0;
 }
 
-/* line 54, ../scss/lib/_rs-default.scss */
 .rsDefault.rsHor .rsArrowLeft {
   left: 0;
   top: 0;
 }
 
-/* line 55, ../scss/lib/_rs-default.scss */
 .rsDefault.rsHor .rsArrowRight {
   right: 0;
   top: 0;
@@ -526,7 +507,6 @@ img.rsImg {
 .rsDefault .rsArrowIcn:hover {
 	background-color: rgba(0,0,0,0.9);
 } */
-/* line 79, ../scss/lib/_rs-default.scss */
 .rsDefault .rsArrowRight .rsArrowIcn {
   width: 32px;
   height: 32px;
@@ -539,12 +519,10 @@ img.rsImg {
   background: url("../../images/slide/sprite-slide.png") no-repeat;
 }
 
-/* line 92, ../scss/lib/_rs-default.scss */
 .rsDefault .rsArrowIcn:hover {
   background-position: 0 -40px;
 }
 
-/* line 95, ../scss/lib/_rs-default.scss */
 .rsDefault .rsArrowLeft .rsArrowIcn {
   width: 32px;
   height: 32px;
@@ -561,7 +539,6 @@ img.rsImg {
   transform: scaleX(-1);
 }
 
-/* line 113, ../scss/lib/_rs-default.scss */
 .rsDefault .rsArrowIcn:hover {
   background-position: 0 -40px;
 }
@@ -619,13 +596,11 @@ img.rsImg {
 *  3. Thumbnails
 *
 ****************/
-/* line 178, ../scss/lib/_rs-default.scss */
 .rsDefault .rsThumbsHor {
   width: 100%;
   height: 72px;
 }
 
-/* line 182, ../scss/lib/_rs-default.scss */
 .rsDefault .rsThumbsVer {
   width: 96px;
   height: 100%;
@@ -634,19 +609,16 @@ img.rsImg {
   right: 0;
 }
 
-/* line 189, ../scss/lib/_rs-default.scss */
 .rsDefault.rsWithThumbsHor .rsThumbsContainer {
   position: relative;
   height: 100%;
 }
 
-/* line 193, ../scss/lib/_rs-default.scss */
 .rsDefault.rsWithThumbsVer .rsThumbsContainer {
   position: relative;
   width: 100%;
 }
 
-/* line 197, ../scss/lib/_rs-default.scss */
 .rsDefault .rsThumb {
   float: left;
   overflow: hidden;
@@ -654,30 +626,25 @@ img.rsImg {
   height: 72px;
 }
 
-/* line 203, ../scss/lib/_rs-default.scss */
 .rsDefault .rsThumb img {
   width: 100%;
   height: 100%;
 }
 
-/* line 207, ../scss/lib/_rs-default.scss */
 .rsDefault .rsThumb.rsNavSelected {
   background: #02874a;
 }
 
-/* line 210, ../scss/lib/_rs-default.scss */
 .rsDefault .rsThumb.rsNavSelected img {
   opacity: 0.3;
   filter: alpha(opacity=30);
 }
 
-/* line 214, ../scss/lib/_rs-default.scss */
 .rsDefault .rsTmb {
   display: block;
 }
 
 /* Thumbnails with text */
-/* line 219, ../scss/lib/_rs-default.scss */
 .rsDefault .rsTmb h5 {
   font-size: 16px;
   margin: 0;
@@ -686,7 +653,6 @@ img.rsImg {
   color: #FFF;
 }
 
-/* line 226, ../scss/lib/_rs-default.scss */
 .rsDefault .rsTmb span {
   color: #DDD;
   margin: 0;
@@ -696,7 +662,6 @@ img.rsImg {
 }
 
 /* Thumbnails arrow icons */
-/* line 237, ../scss/lib/_rs-default.scss */
 .rsDefault .rsThumbsArrow {
   height: 100%;
   width: 20px;
@@ -708,42 +673,35 @@ img.rsImg {
   background: rgba(0, 0, 0, 0.75);
 }
 
-/* line 247, ../scss/lib/_rs-default.scss */
 .rsDefault .rsThumbsArrow:hover {
   background: rgba(0, 0, 0, 0.9);
 }
 
-/* line 250, ../scss/lib/_rs-default.scss */
 .rsDefault.rsWithThumbsVer .rsThumbsArrow {
   width: 100%;
   height: 20px;
 }
 
-/* line 254, ../scss/lib/_rs-default.scss */
 .rsDefault.rsWithThumbsVer .rsThumbsArrowLeft {
   top: 0;
   left: 0;
 }
 
-/* line 255, ../scss/lib/_rs-default.scss */
 .rsDefault.rsWithThumbsVer .rsThumbsArrowRight {
   bottom: 0;
   left: 0;
 }
 
-/* line 257, ../scss/lib/_rs-default.scss */
 .rsDefault.rsWithThumbsHor .rsThumbsArrowLeft {
   left: 0;
   top: 0;
 }
 
-/* line 258, ../scss/lib/_rs-default.scss */
 .rsDefault.rsWithThumbsHor .rsThumbsArrowRight {
   right: 0;
   top: 0;
 }
 
-/* line 260, ../scss/lib/_rs-default.scss */
 .rsDefault .rsThumbsArrowIcn {
   width: 16px;
   height: 16px;
@@ -756,45 +714,37 @@ img.rsImg {
   background: url("../../images/slide/sprite-slide.png");
 }
 
-/* line 273, ../scss/lib/_rs-default.scss */
 .rsDefault.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn {
   background-position: -128px -32px;
 }
 
-/* line 274, ../scss/lib/_rs-default.scss */
 .rsDefault.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn {
   background-position: -128px -48px;
 }
 
-/* line 276, ../scss/lib/_rs-default.scss */
 .rsDefault.rsWithThumbsVer .rsThumbsArrowLeft .rsThumbsArrowIcn {
   background-position: -144px -32px;
 }
 
-/* line 277, ../scss/lib/_rs-default.scss */
 .rsDefault.rsWithThumbsVer .rsThumbsArrowRight .rsThumbsArrowIcn {
   background-position: -144px -48px;
 }
 
-/* line 279, ../scss/lib/_rs-default.scss */
 .rsDefault .rsThumbsArrowDisabled {
   display: none !important;
 }
 
 /* Thumbnails resizing on smaller screens */
 @media screen and (min-width: 0px) and (max-width: 800px) {
-  /* line 283, ../scss/lib/_rs-default.scss */
   .rsDefault .rsThumb {
     width: 59px;
     height: 44px;
   }
 
-  /* line 287, ../scss/lib/_rs-default.scss */
   .rsDefault .rsThumbsHor {
     height: 44px;
   }
 
-  /* line 290, ../scss/lib/_rs-default.scss */
   .rsDefault .rsThumbsVer {
     width: 59px;
   }
@@ -804,7 +754,6 @@ img.rsImg {
 *  4. Tabs
 *
 ****************/
-/* line 304, ../scss/lib/_rs-default.scss */
 .rsDefault .rsTabs {
   width: 100%;
   height: auto;
@@ -815,7 +764,6 @@ img.rsImg {
   position: relative;
 }
 
-/* line 311, ../scss/lib/_rs-default.scss */
 .rsDefault .rsTab {
   display: inline-block;
   cursor: pointer;
@@ -838,7 +786,6 @@ img.rsImg {
   *zoom: 1;
 }
 
-/* line 335, ../scss/lib/_rs-default.scss */
 .rsDefault .rsTab:first-child {
   -webkit-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
@@ -846,7 +793,6 @@ img.rsImg {
   border-bottom-left-radius: 4px;
 }
 
-/* line 341, ../scss/lib/_rs-default.scss */
 .rsDefault .rsTab:last-child {
   -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
@@ -855,14 +801,12 @@ img.rsImg {
   border-right: 1px solid #cfcfcf;
 }
 
-/* line 349, ../scss/lib/_rs-default.scss */
 .rsDefault .rsTab:active {
   border: 1px solid #D9D9DD;
   background-color: #f4f4f4;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset;
 }
 
-/* line 354, ../scss/lib/_rs-default.scss */
 .rsDefault .rsTab.rsNavSelected {
   color: #FFF;
   border: 1px solid #999;
@@ -879,7 +823,6 @@ img.rsImg {
 *  5. Fullscreen button
 *
 ****************/
-/* line 375, ../scss/lib/_rs-default.scss */
 .rsDefault .rsFullscreenBtn {
   right: 0;
   top: 0;
@@ -891,7 +834,6 @@ img.rsImg {
   cursor: pointer;
 }
 
-/* line 386, ../scss/lib/_rs-default.scss */
 .rsDefault .rsFullscreenIcn {
   display: block;
   margin: 6px;
@@ -904,12 +846,10 @@ img.rsImg {
   border-radius: 2px;
 }
 
-/* line 400, ../scss/lib/_rs-default.scss */
 .rsDefault .rsFullscreenIcn:hover {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-/* line 403, ../scss/lib/_rs-default.scss */
 .rsDefault.rsFullscreen .rsFullscreenIcn {
   background-position: -32px 0;
 }
@@ -919,7 +859,6 @@ img.rsImg {
 *  6. Play/close video button
 *
 ****************/
-/* line 417, ../scss/lib/_rs-default.scss */
 .rsDefault .rsPlayBtn {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
   width: 64px;
@@ -929,7 +868,6 @@ img.rsImg {
   cursor: pointer;
 }
 
-/* line 425, ../scss/lib/_rs-default.scss */
 .rsDefault .rsPlayBtnIcon {
   width: 64px;
   display: block;
@@ -945,19 +883,16 @@ img.rsImg {
   *background-color: #000;
 }
 
-/* line 442, ../scss/lib/_rs-default.scss */
 .rsDefault .rsPlayBtn:hover .rsPlayBtnIcon {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-/* line 445, ../scss/lib/_rs-default.scss */
 .rsDefault .rsBtnCenterer {
   position: absolute;
   left: 50%;
   top: 50%;
 }
 
-/* line 450, ../scss/lib/_rs-default.scss */
 .rsDefault .rsCloseVideoBtn {
   right: 0;
   top: 0;
@@ -970,13 +905,11 @@ img.rsImg {
   -webkit-transform: translateZ(0);
 }
 
-/* line 462, ../scss/lib/_rs-default.scss */
 .rsDefault .rsCloseVideoBtn.rsiOSBtn {
   top: -38px;
   right: -6px;
 }
 
-/* line 467, ../scss/lib/_rs-default.scss */
 .rsDefault .rsCloseVideoIcn {
   margin: 6px;
   width: 32px;
@@ -987,7 +920,6 @@ img.rsImg {
   *background-color: #000;
 }
 
-/* line 477, ../scss/lib/_rs-default.scss */
 .rsDefault .rsCloseVideoIcn:hover {
   background-color: rgba(0, 0, 0, 0.9);
 }
@@ -997,7 +929,6 @@ img.rsImg {
 *  7. Preloader
 *
 ****************/
-/* line 489, ../scss/lib/_rs-default.scss */
 .rsDefault .rsPreloader {
   width: 20px;
   height: 20px;
@@ -1013,7 +944,6 @@ img.rsImg {
 *  8. Global caption
 *
 ****************/
-/* line 508, ../scss/lib/_rs-default.scss */
 .rsDefault .rsGCaption {
   position: absolute;
   float: none;
@@ -1029,13 +959,12 @@ img.rsImg {
   border-radius: 2px;
 }
 
-/* line 1, ../scss/_base.scss */
 body {
   width: 1019px;
   margin: auto;
+  color: #666d89;
 }
 
-/* line 1, ../scss/widgets/_header.scss */
 header {
   background-color: #303441;
   height: 90px;
@@ -1046,7 +975,6 @@ header {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 12, ../scss/widgets/_header.scss */
 header h1 {
   float: left;
   width: 106px;
@@ -1054,13 +982,11 @@ header h1 {
   color: #ffffff;
   font-family: "Myriad Pro Regular","Lato Bold";
 }
-/* line 21, ../scss/widgets/_header.scss */
 header nav ul {
   font-size: 0;
   float: right;
   padding-right: 33px;
 }
-/* line 25, ../scss/widgets/_header.scss */
 header nav ul li {
   display: inline-block;
   font-size: 16px;
@@ -1068,7 +994,6 @@ header nav ul li {
   font-size: 12px;
   margin-right: 15px;
 }
-/* line 31, ../scss/widgets/_header.scss */
 header nav ul li:after {
   display: inline-block;
   width: 2px;
@@ -1079,79 +1004,339 @@ header nav ul li:after {
   margin-left: 18px;
   margin-bottom: 2px;
 }
-/* line 42, ../scss/widgets/_header.scss */
 header nav ul li:last-child:after {
   display: none;
 }
-/* line 46, ../scss/widgets/_header.scss */
 header nav ul li a {
   color: #ffffff;
   text-decoration: none;
 }
-/* line 49, ../scss/widgets/_header.scss */
 header nav ul li a:hover {
   color: #eb5055;
 }
 
-/* line 1, ../scss/layouts/slider/_royalslider.scss */
+footer {
+  height: 76px;
+  background-color: #303441;
+}
+
 .royalSlider {
   width: 100%;
   height: 595px;
   background-color: #eb5055 !important;
   border-bottom: 10px solid #ea676b !important;
 }
-/* line 7, ../scss/layouts/slider/_royalslider.scss */
 .royalSlider .rsOverflow.grab-cursor {
   width: 100% !important;
   background-color: #eb5055 !important;
 }
-/* line 11, ../scss/layouts/slider/_royalslider.scss */
 .royalSlider .rsOverflow.grab-cursor .rsSlide {
   background: #eb5055 !important;
 }
 
-/* line 16, ../scss/layouts/slider/_royalslider.scss */
 .royalSlider .rsDefault .rsHor .rsWithBullets {
   border-bottom: 10px solid #ea676b !important;
 }
 
-/* line 1, ../scss/layouts/service/_service.scss */
 .services {
   background-color: #f2f2f2;
-  height: 501px;
-  color: #666d89;
+  height: 495px;
+  border-bottom: 7px solid #ffffff;
   padding-left: 39px;
   padding-right: 40px;
 }
-/* line 7, ../scss/layouts/service/_service.scss */
 .services h2 {
-  font-family: "Lato-Black";
-  padding-top: 66px;
-  padding-bottom: 32px;
   font-size: 30px;
+  font-family: "Lato-Black";
+  padding-top: 67px;
 }
-/* line 13, ../scss/layouts/service/_service.scss */
 .services p {
   font-size: 18px;
   font-family: "Lato Light";
   line-height: 30px;
+  padding-top: 32px;
 }
-/* line 18, ../scss/layouts/service/_service.scss */
-.services figure {
+.services div figure {
   padding-top: 51px;
-}
-/* line 20, ../scss/layouts/service/_service.scss */
-.services figure figcaption {
-  width: 305px;
   display: inline-block;
+  width: 300px;
+  height: 85px;
 }
-/* line 26, ../scss/layouts/service/_service.scss */
-.services figure figcaption h3 {
+.services div figure span {
+  display: block;
+  height: 30px;
+  width: 30px;
+  float: left;
+}
+.services div figure figcaption {
+  width: 220px;
+  height: 85px;
+  display: inline-block;
+  float: right;
+}
+.services div figure figcaption h3 {
   font-size: 18px;
   font-family: "Lato-Black";
 }
-/* line 30, ../scss/layouts/service/_service.scss */
-.services figure figcaption p {
+.services div figure figcaption p {
   font-family: "Lato Regular";
   font-size: 12px;
+  line-height: 23px;
+  padding-top: 18px;
+  text-align: justify;
+}
+
+.portfolio {
+  background-color: #303441;
+  height: 864px;
+  border-bottom: 5px solid #373b4a;
+  padding-left: 39px;
+  padding-right: 40px;
+}
+.portfolio h2 {
+  font-size: 30px;
+  font-family: "Lato-Black";
+  padding-top: 67px;
+}
+.portfolio p {
+  font-size: 18px;
+  font-family: "Lato Light";
+  line-height: 30px;
+  padding-top: 32px;
+}
+.portfolio nav {
+  padding-top: 19px;
+  font-size: 12px;
+  font-family: "Lato Regular";
+}
+.portfolio nav .menu li {
+  display: inline-block;
+  border: 1px solid #666d89;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  padding-left: 7px;
+  padding-right: 6px;
+  margin-right: 9px;
+}
+.portfolio nav .menu li:hover {
+  border: 1px solid #ffffff;
+}
+.portfolio nav .menu li a {
+  text-decoration: none;
+  color: #666d89;
+}
+.portfolio nav .menu li a:hover {
+  color: #ffffff;
+}
+.portfolio .pict1 figure {
+  width: 220px;
+  height: 188px;
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.portfolio .pict1 figure:last-child {
+  margin-right: 0px;
+}
+.portfolio .pict1 figure:first-child {
+  margin-left: 0px;
+}
+.portfolio .pict1 figure:hover figcaption {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+.portfolio .pict1 figure img {
+  width: 100%;
+}
+.portfolio .pict1 figure figcaption {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 600ms;
+  -o-transition-duration: 600ms;
+  -webkit-transition-duration: 600ms;
+  transition-duration: 600ms;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+.portfolio .pict1 figure figcaption p {
+  font-size: 12px;
+  font-family: "Lato Light";
+  line-height: 20px;
+  padding-top: 0;
+  font-weight: bold;
+}
+.portfolio .pict2 figure {
+  width: 220px;
+  height: 188px;
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 8px;
+  margin-left: 8px;
+  overflow: hidden;
+}
+.portfolio .pict2 figure:last-child {
+  margin-right: 0px;
+}
+.portfolio .pict2 figure:first-child {
+  margin-left: 0px;
+}
+.portfolio .pict2 figure:hover figcaption {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  width: 220px;
+  height: 188px;
+}
+.portfolio .pict2 figure img {
+  width: 100%;
+}
+.portfolio .pict2 figure figcaption {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 800ms;
+  -o-transition-duration: 800ms;
+  -webkit-transition-duration: 800ms;
+  transition-duration: 800ms;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+.portfolio .pict2 figure figcaption p {
+  font-size: 12px;
+  font-family: "Lato Light";
+  line-height: 20px;
+  padding-top: 0;
+  font-weight: bold;
+}
+.portfolio .pict3 figure {
+  width: 220px;
+  height: 188px;
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 8px;
+  margin-left: 8px;
+  overflow: hidden;
+}
+.portfolio .pict3 figure:last-child {
+  margin-right: 0px;
+}
+.portfolio .pict3 figure:first-child {
+  margin-left: 0px;
+}
+.portfolio .pict3 figure:hover figcaption {
+  left: 0;
+}
+.portfolio .pict3 figure img {
+  width: 100%;
+}
+.portfolio .pict3 figure figcaption {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: -220px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 800ms;
+  -o-transition-duration: 800ms;
+  -webkit-transition-duration: 800ms;
+  transition-duration: 800ms;
+}
+.portfolio .pict3 figure figcaption p {
+  font-size: 12px;
+  font-family: "Lato Light";
+  line-height: 20px;
+  padding-top: 0;
+  font-weight: bold;
+}
+
+.about {
+  background-color: #f2f2f2;
+  padding-left: 39px;
+  padding-right: 40px;
+  height: 734px;
+  border-bottom: 7px solid #ffffff;
+}
+.about h2 {
+  font-size: 30px;
+  font-family: "Lato-Black";
+  padding-top: 67px;
+}
+.about p {
+  font-size: 18px;
+  font-family: "Lato Light";
+  line-height: 30px;
+  padding-top: 32px;
+}
+.about div {
+  padding-top: 50px;
+  width: 940px;
+}
+.about div figure {
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  margin-right: 15px;
+}
+.about div figure:last-child {
+  margin-right: 0px;
+}
+.about div figure figcaption {
+  padding-top: 20px;
+}
+.about div figure figcaption h4 {
+  font-size: 18px;
+  font-family: "Lato-Black";
+}
+.about div figure figcaption p {
+  font-size: 12px;
+  font-family: "Lato Regular";
+  padding-top: 18px;
+  text-align: justify;
+  line-height: 20px;
+}
+
+.quote {
+  background-color: #eb5055;
+  height: 649px;
+  padding-left: 39px;
+  padding-right: 40px;
+  border-bottom: 6px solid #ea676b;
+  color: #f0d8d9;
+}
+.quote h2 {
+  font-size: 30px;
+  font-family: "Lato-Black";
+  padding-top: 67px;
+}
+.quote p {
+  font-size: 18px;
+  font-family: "Lato Light";
+  line-height: 30px;
+  padding-top: 32px;
 }
