@@ -1,0 +1,37 @@
+//http://html5.by/blog/placeholder/
+.placeholder {
+	&::-webkit-input-placeholder {
+		font-family: "Lato Regular";
+		font-size: 12px;
+		color:#f48c8f;
+	}
+	&::-moz-placeholder {
+		font-family: "Lato Regular";
+		font-size: 12px;
+		color:#f48c8f;
+	}/* Firefox 19+ */
+	&:-moz-placeholder {
+		font-family: "Lato Regular";
+		font-size: 12px;
+		color:#f48c8f;
+	}/* Firefox 18- */
+	&:-ms-input-placeholder {
+		font-family: "Lato Regular";
+		font-size: 12px;
+		color:#f48c8f;
+	}
+}
+.placeholder_fc {
+	&::-webkit-input-placeholder {
+		color: transparent
+	}
+	&::-moz-placeholder {
+		color: transparent
+	}
+	&:-moz-placeholder {
+		color: transparent
+	}
+	&:-ms-input-placeholder {
+		color: transparent
+	}
+}

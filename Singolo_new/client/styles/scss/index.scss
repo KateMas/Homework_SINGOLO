@@ -1,0 +1,35 @@
+//libs
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+@import "compass/utilities/sprites";
+
+//$social-layout: horizontal;
+//@import "contacts/*.png";
+
+//@include all-social-sprites;
+
+//fonts
+@import "fonts/lato";
+
+//mixins
+@import "mixins/br-radius.scss";
+
+//base
+@import "base";
+
+//components
+@import "components/but_social";
+@import "components/text";
+@import "components/title";
+@import "components/placeholder";
+
+//widgets
+@import "widgets/header";
+@import "widgets/footer";
+
+//layouts
+@import "layouts/main";
+
+@import "lib/rs";
+@import "lib/rs-default";

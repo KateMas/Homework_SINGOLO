@@ -1,0 +1,47 @@
+.service {
+	width: 100%;
+	border-bottom: 7px solid #ffffff;
+	background-color: #f2f2f2;
+	color:#666d89;
+	@include clearfix;
+	.content_service {
+		width: 1019px;
+		height: 495px;
+		margin: 0 auto;
+		@include box-sizing(border-box);
+		h2 {
+			@extend .title_h2;
+		}
+		p {
+			padding-bottom:13px;
+			@extend .descrip;
+		}
+		.art {
+			justify-content: space-around;
+			display: flex;
+			margin-top:38px;
+			padding-left:40px;
+			padding-right:40px;
+			figure {
+				width: 300px;
+				height: 85px;
+				img {
+					float: left;
+					width: 59px;
+					height: 59px;
+				}
+				figcaption {
+					float: right;
+					width: 220px;
+					height: 85px;					
+					h3 {
+						@extend .title_h3;
+					}
+					p {
+						@extend .text_people;
+					}
+				}
+			}	
+		}
+	}	
+} 

@@ -1,0 +1,128 @@
+.portfolio {
+	width: 100%;
+	border-bottom:5px solid #373b4a;
+	background-color: #303441;
+	color:#666d89;
+	.content_portfolio {
+		width: 1019px;
+		height: 864px;
+		margin: 0 auto;
+		@include box-sizing(border-box);
+		h2 {
+			@extend .title_h2;
+		}
+		p {
+			padding-bottom:13px;
+			@extend .descrip;
+		}
+		nav {
+			padding-top: 19px;
+			padding-left:40px;
+			font-size: 12px;
+			font-family: "Lato Regular";
+			.menu {
+				li {
+					display: inline-block; 
+					margin-right: 9px;
+					padding-top:5px;
+					padding-bottom: 4px;
+					padding-left: 7px;
+					padding-right: 6px;
+					border:1px solid #666d89;
+					@include border-radius (5px);
+					&:hover {					
+						border:1px solid #ffffff;
+					}
+					a {
+						color:#666d89;
+						text-decoration: none;
+						&:hover {
+							color:#ffffff;
+						}
+					}
+				}
+			}
+		}
+		div {
+			justify-content: space-between;
+			display: flex;
+			padding-left: 40px;
+			padding-right:40px;
+			figure {
+				width: 220px;
+				height: 188px;
+				position: relative;
+				margin-top:20px;
+				img {
+				width: 100%;
+				}
+				figcaption {
+					position:absolute;
+					display: block;
+					@include transition-property (all);
+					p {
+						padding-top: 0;
+						padding-left:0px;
+						padding-right: 0px;
+						font-size: 12px;
+						font-family: "Lato Light";
+						font-weight: bold;
+						line-height: 20px;
+						text-align: justify;
+					}
+				}
+			}
+			.slow-visible {
+				&:hover {
+					figcaption {
+					@include opacity(1);
+					}
+				}				
+				figcaption {
+					top: 0px;
+					left: 0px;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(#ffffff, 0.7);
+					@include transition-duration (600ms);
+					@include opacity (0);
+				}
+			}
+			.diagonal {
+				overflow: hidden;
+				&:hover {
+					figcaption {
+						@include opacity(1);
+						width: 220px;
+						height: 188px;
+					}
+				}			
+				figcaption {
+					top: 0px;
+					left: 0px;
+					width: 0;
+					height: 0;
+					background-color: rgba(#ffffff, 0.7);
+					@include transition-duration (800ms);
+					@include opacity (0);
+				}
+			}
+			.side-panel {
+				overflow: hidden;
+				&:hover {
+					figcaption {
+					left: 0;
+					}
+				}		
+				figcaption {
+					top: 0px;
+					left: -220px;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(#ffffff, 0.7);
+					@include transition-duration (800ms);		
+				}	
+			}	
+		}		
+	}
+}

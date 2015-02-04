@@ -1,0 +1,41 @@
+footer {
+	width: 100%;
+	background-color: #303441;
+	font-family: "Lato Regular";
+	line-height: 75px;		
+    @include clearfix;
+    .width1 {
+    	width: 1019px;
+		height: 76px;
+		margin: 0 auto;	
+		.copy {
+			float:left;
+			padding-left: 40px;
+			font-size:0;
+			li {
+				display:inline-block;
+				color: #666d89;			
+				font-size: 12px;
+				&:after {
+					display: inline-block;
+					width: 2px;
+					height: 2px;
+					margin-left:3px;
+					margin-right:3px;
+					margin-bottom: 2px;
+					background-color: #3d4253;
+					content: "";
+					@include border-radius (50%);							
+				}
+				&:last-child {
+					&:after {
+						display: none;
+					}	
+				}
+			}
+		}	
+		.social {
+			@extend .button;	
+		}	
+	}
+}	
