@@ -34,7 +34,8 @@
 				@extend .placeholder;
 				&:focus {
 					background-color: #e7b9ba;
-					@extend .placeholder_fc;
+					@extend .placeholder-fc;
+					@include transition-duration (1000ms);
 				}
 			}
 			textarea {
@@ -50,7 +51,8 @@
 				@extend .placeholder;
 				&:focus {
 					background-color: #e7b9ba;
-					@extend .placeholder_fc;
+					@extend .placeholder-fc;
+					@include transition-duration (1000ms);
 				}
 			}
 			button {

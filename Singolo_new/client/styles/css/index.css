@@ -225,16 +225,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #f48c8f;
 }
 
-.placeholder_fc::-webkit-input-placeholder, .quote .content_quote form input:focus::-webkit-input-placeholder, .quote .content_quote form textarea:focus::-webkit-input-placeholder {
+.placeholder-fc::-webkit-input-placeholder, .quote .content_quote form input:focus::-webkit-input-placeholder, .quote .content_quote form textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
-.placeholder_fc::-moz-placeholder, .quote .content_quote form input:focus::-moz-placeholder, .quote .content_quote form textarea:focus::-moz-placeholder {
+.placeholder-fc::-moz-placeholder, .quote .content_quote form input:focus::-moz-placeholder, .quote .content_quote form textarea:focus::-moz-placeholder {
   color: transparent;
 }
-.placeholder_fc:-moz-placeholder, .quote .content_quote form input:-moz-placeholder:focus, .quote .content_quote form textarea:-moz-placeholder:focus {
+.placeholder-fc:-moz-placeholder, .quote .content_quote form input:-moz-placeholder:focus, .quote .content_quote form textarea:-moz-placeholder:focus {
   color: transparent;
 }
-.placeholder_fc:-ms-input-placeholder, .quote .content_quote form input:-ms-input-placeholder:focus, .quote .content_quote form textarea:-ms-input-placeholder:focus {
+.placeholder-fc:-ms-input-placeholder, .quote .content_quote form input:-ms-input-placeholder:focus, .quote .content_quote form textarea:-ms-input-placeholder:focus {
   color: transparent;
 }
 
@@ -622,6 +622,10 @@ footer .width1 .copy li:last-child:after {
 }
 .quote .content_quote form input:focus {
   background-color: #e7b9ba;
+  -webkit-transition-duration: 1000ms;
+  -moz-transition-duration: 1000ms;
+  -o-transition-duration: 1000ms;
+  transition-duration: 1000ms;
 }
 .quote .content_quote form textarea {
   width: 603px;
@@ -639,6 +643,10 @@ footer .width1 .copy li:last-child:after {
 }
 .quote .content_quote form textarea:focus {
   background-color: #e7b9ba;
+  -webkit-transition-duration: 1000ms;
+  -moz-transition-duration: 1000ms;
+  -o-transition-duration: 1000ms;
+  transition-duration: 1000ms;
 }
 .quote .content_quote form button {
   float: right;
