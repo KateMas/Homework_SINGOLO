@@ -3,18 +3,14 @@ header {
 		border-bottom:6px solid #373b4a;
 		background-color: #303441;
 		font-family: "Lato Bold";
-		line-height: 89px;		
-	    @include clearfix;		
-		.width {
-			width: 1019px;
-			height: 90px;
-			margin: 0 auto;
+		line-height: 90px;		
+	    @include clearfix;	
+	    @include user-select(none);	
+		.container {
 			.singolo {
 				float:left;
-				padding-left: 40px;
 				font-size:0;
-				li {
-					width: 106px;				
+				li {			
 					font-size: 25px;
 					color: #ffffff;
 					span {
@@ -24,7 +20,6 @@ header {
 			}	
 		.menu {
 			float:right;
-			padding-right:40px;
 			font-size:0;
 			li {
 				display:inline-block;
@@ -55,4 +50,4 @@ header {
 			}
 		}
 	}	
-}	
+}

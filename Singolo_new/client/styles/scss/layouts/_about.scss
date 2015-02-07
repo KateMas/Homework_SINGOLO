@@ -4,10 +4,8 @@
 	background-color: #f2f2f2;
 	color:#666d89;
 	@include clearfix;
-	.content_about {
-		width: 1019px;
+	.container {
 		height: 734px;
-		margin: 0 auto;
 		@include box-sizing(border-box);
 		h2 {
 			@extend .title_h2;	
@@ -17,8 +15,6 @@
 		}
 		.people {
 			display: inline-block;
-			padding-left: 40px;
-			padding-right:40px;
 			figure {
 				display: inline-block;
 				width: 300px;

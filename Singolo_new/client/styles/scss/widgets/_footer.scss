@@ -4,13 +4,10 @@ footer {
 	font-family: "Lato Regular";
 	line-height: 75px;		
     @include clearfix;
-    .width1 {
-    	width: 1019px;
+    .container {
 		height: 76px;
-		margin: 0 auto;	
 		.copy {
 			float:left;
-			padding-left: 40px;
 			font-size:0;
 			li {
 				display:inline-block;

@@ -13,7 +13,11 @@
 @import "fonts/lato";
 
 //mixins
-@import "mixins/br-radius.scss";
+//@import "mixins/br-radius.scss";
+@import "mixins/user-select";
+
+//base
+@import "base";
 
 //components
 @import "components/but_social";
