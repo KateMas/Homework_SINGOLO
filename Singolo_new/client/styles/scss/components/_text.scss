@@ -1,13 +1,15 @@
-.descrip {
-	padding-top:32px;
+.description {
+	margin-top: 32px;
 	font-size: 18px;
-    font-family: "Lato Light";
+    font-family: 'Lato', sans-serif;
+	font-weight: lighter;
     line-height: 30px;
 }
-.text_people {
-	padding-top:18px;
+.text-small {
+	margin-top: 18px;
 	font-size: 12px;
-	font-family: "Lato Regular";
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
 	line-height:20px;
 	text-align: justify;
 }		

@@ -7,7 +7,7 @@
 	align-items: center;		
 	li {
 		width: 30px;
-		height: 32px;
+		height: 30px;
 		border:1px solid #666d89;
 		@include border-radius (50%); 
 		&:hover {

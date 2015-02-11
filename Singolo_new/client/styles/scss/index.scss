@@ -13,8 +13,8 @@
 @import "fonts/lato";
 
 //mixins
-//@import "mixins/br-radius.scss";
 @import "mixins/user-select";
+@import "mixins/placeholder";
 
 //base
 @import "base";
@@ -23,14 +23,14 @@
 @import "components/but_social";
 @import "components/text";
 @import "components/title";
-@import "components/placeholder";
 
 //widgets
 @import "widgets/header";
 @import "widgets/footer";
+@import "widgets/navigation";
 
 //layouts
-@import "layouts/main";
+@import "layouts/body";
 
 @import "lib/rs";
 @import "lib/rs-default";
