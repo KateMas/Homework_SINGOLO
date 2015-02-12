@@ -1,0 +1,75 @@
+.quote {
+	width: 100%;
+	border-bottom:6px solid #ea676b;
+	background-color: #eb5055;
+	color:#f0d8d9;
+	.container {
+		padding-top: 67px;
+		padding-bottom: 67px;
+		@include box-sizing(border-box);
+		@include clearfix;
+		form {
+			float: left;
+			width: 619px;
+			margin-top: 51px;
+			font-family: 'Lato', sans-serif;
+			font-weight: normal;
+			font-size: 12px;
+			button {
+				float: right;
+				margin-top:10px;
+				padding:5px;
+				border:2px solid #aa3b3e;
+				@include border-radius (5px);
+				outline:none;
+				background-color: #ca4549;
+				color:#6a3739;
+				font-weight: bold;
+				text-align: center;
+				&:hover {
+					border:3px solid #aa3b3e;
+					background-color: #46292a;
+					color: #000000;
+					cursor: pointer;
+				}
+			}
+		}
+		.contact{
+			float: right;
+			width: 301px;
+			margin-top: 51px;
+			ul {
+				margin-top:29px;
+				li {
+					margin-bottom: 14px;
+					padding-left: 23px;
+					font-size: 12px;
+					font-family: 'Lato', sans-serif;
+					font-weight: normal;	
+					&:first-child {
+						background-image:url(../../../client/images/contacts/location.png);
+						background-position: 3px 0;
+						background-repeat: no-repeat;
+					}	
+					&:nth-child(2) {
+						background-image:url(../../../client/images/contacts/phone1.png);
+						background-position: 1px 0;
+						background-repeat: no-repeat;
+					}
+					&:last-child {
+						background-image:url(../../../client/images/contacts/envelope.png);
+						background-position: 0;
+						background-repeat: no-repeat;
+					}			
+					a {
+						color:#f0d8d9;
+						text-decoration: none;
+					}
+					img {
+						padding-right:15px;
+					}
+				}
+			}
+		}	
+	}
+}

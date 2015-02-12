@@ -1,0 +1,17 @@
+input {
+	width: 603px;
+	height: 38px;
+	margin-bottom:16px;
+	padding-left:16px;
+	border:none;
+	@include border-radius (5px);
+	outline:none;
+	background-color: #ca4549;
+	@include placeholder('Lato', normal, 12px, #f48c8f);
+	&:focus {
+		background-color: #e7b9ba;
+		color: #7D3C3C;
+		@include placeholder ('Lato', normal, 12px, transparent);
+		@include transition-duration (1000ms);
+	}
+}

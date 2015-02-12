@@ -1,0 +1,31 @@
+.service {
+	width: 100%;
+	border-bottom: 7px solid #ffffff;
+	background-color: #f2f2f2;
+	color:#666d89;
+	@include clearfix;
+	.container {		
+		padding-top: 67px;
+		padding-bottom: 67px;
+		@include box-sizing(border-box);
+		.art {
+			margin-top:38px;
+			font-size: 0;
+			figure {
+				width: 300px;
+				display: inline-block;
+				margin-right: 13px;
+				&::last-child {
+					margin-right: 0;
+				}
+				img {
+					float: left;
+				}
+				figcaption {
+					float: right;
+					width: 220px;
+				}
+			}
+		}
+	}	
+} 
