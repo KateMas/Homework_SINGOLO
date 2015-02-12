@@ -5,7 +5,7 @@
 @import "compass/utilities/sprites";
 
 //$social-layout: horizontal;
-//@import "contacts/*.png";
+//@import "social/*.png";
 
 //@include all-social-sprites;
 
@@ -20,7 +20,6 @@
 @import "base";
 
 //components
-@import "components/but_social";
 @import "components/text";
 @import "components/title";
 @import "components/input-home";
@@ -30,6 +29,7 @@
 @import "widgets/header";
 @import "widgets/footer";
 @import "widgets/navigation";
+@import "widgets/but_social";
 
 //layouts
 @import "layouts/body";

@@ -7,9 +7,10 @@
 		padding-top: 67px;
 		padding-bottom: 67px;
 		@include box-sizing(border-box);
-		div {			
+		.portfolio-gallery {			
 			width: 939px;
 			font-size: 0;
+			@include user-select(none);
 			figure {
 				display: inline-block;
 				width: 220px;
@@ -38,10 +39,11 @@
 						font-weight: bold;
 						line-height: 20px;
 						text-align: justify;
+						color: #45100E;
 					}
 				}
 			}
-			.slow-visible {
+			.portfolio-slow-visible {
 				&:hover {
 					figcaption {
 					@include opacity(1);
@@ -57,7 +59,7 @@
 					@include opacity (0);
 				}
 			}
-			.diagonal {
+			.portfolio-diagonal {
 				overflow: hidden;
 				&:hover {
 					figcaption {
@@ -76,7 +78,7 @@
 					@include opacity (0);
 				}
 			}
-			.side-panel {
+			.portfolio-side-panel {
 				overflow: hidden;
 				&:hover {
 					figcaption {

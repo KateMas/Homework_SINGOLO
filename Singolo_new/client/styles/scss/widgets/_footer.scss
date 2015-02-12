@@ -2,18 +2,17 @@ footer {
 	width: 100%;
 	background-color: #303441;
 	font-family: 'Lato', sans-serif;
-	font-weight: normal;
-	line-height: 75px;		
+	font-weight: normal;		
     @include clearfix;
     .container {
-		height: 76px;
-		.copy {
-			float:left;
+		.copyright {
+			float:left;			
 			font-size:0;
 			li {
 				display:inline-block;
 				color: #666d89;			
 				font-size: 12px;
+				line-height: 76px;
 				&:after {
 					display: inline-block;
 					width: 2px;
@@ -33,7 +32,8 @@ footer {
 			}
 		}	
 		.social {
-			@extend .button;	
+			float: right;
+			margin-top: 22px;	
 		}	
 	}
 }	

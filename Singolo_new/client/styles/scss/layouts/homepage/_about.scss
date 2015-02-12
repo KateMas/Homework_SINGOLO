@@ -5,11 +5,10 @@
 	color:#666d89;
 	@include clearfix;
 	.container {
-		//height: 734px;
 		padding-top: 67px;
 		padding-bottom: 67px;
 		@include box-sizing(border-box);
-		.people {
+		.about-people {
 			display: inline-block;
 			margin-top:51px;
 			font-size: 0;
@@ -20,11 +19,13 @@
 				&:last-child {
 					margin-right:0px;
 				}
+				img {
+					@include user-select(none);
+				}
 				figcaption {
 					padding-top:20px;
-					ul {
-						@extend .button;
-						float: left;
+					.social {
+						margin-top:30px;
 					}
 				}
 			}	

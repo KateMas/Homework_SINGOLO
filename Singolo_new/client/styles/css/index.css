@@ -65,62 +65,6 @@ body .container {
   margin: auto;
 }
 
-.button, footer .container .social, .about .container .people figure figcaption ul {
-  float: right;
-  justify-content: space-around;
-  display: flex;
-  width: 153px;
-  height: 76px;
-  align-items: center;
-}
-.button li, footer .container .social li, .about .container .people figure figcaption ul li {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #666d89;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
-.button li:hover, footer .container .social li:hover, .about .container .people figure figcaption ul li:hover {
-  border: 2px solid black;
-}
-.button li a, footer .container .social li a, .about .container .people figure figcaption ul li a {
-  display: block;
-  width: 14px;
-  height: 14px;
-  margin: auto;
-  margin-top: 8px;
-  background: url(../../images/social/social.png);
-}
-.button .fc a, footer .container .social .fc a, .about .container .people figure figcaption ul .fc a {
-  width: 8px;
-}
-.button .fc a:hover, footer .container .social .fc a:hover, .about .container .people figure figcaption ul .fc a:hover {
-  background-position: 0 -14px;
-}
-.button .google a, footer .container .social .google a, .about .container .people figure figcaption ul .google a {
-  background-position: 0 -28px;
-}
-.button .google a:hover, footer .container .social .google a:hover, .about .container .people figure figcaption ul .google a:hover {
-  background-position: 0 -42px;
-}
-.button .tw a, footer .container .social .tw a, .about .container .people figure figcaption ul .tw a {
-  height: 12px;
-  background-position: 0 -84px;
-}
-.button .tw a:hover, footer .container .social .tw a:hover, .about .container .people figure figcaption ul .tw a:hover {
-  background-position: 0 -96px;
-}
-.button .in a, footer .container .social .in a, .about .container .people figure figcaption ul .in a {
-  background-position: 0 -56px;
-}
-.button .in a:hover, footer .container .social .in a:hover, .about .container .people figure figcaption ul .in a:hover {
-  background-position: 0 -70px;
-  padding-left: 0px;
-}
-
 .description {
   margin-top: 32px;
   font-size: 18px;
@@ -301,6 +245,7 @@ textarea:focus:-ms-input-placeholder {
 
 header {
   width: 100%;
+  margin-top: 30px;
   border-bottom: 6px solid #373b4a;
   background-color: #303441;
   font-family: 'Lato', sans-serif;
@@ -377,23 +322,20 @@ footer {
   background-color: #303441;
   font-family: 'Lato', sans-serif;
   font-weight: normal;
-  line-height: 75px;
   overflow: hidden;
   *zoom: 1;
 }
-footer .container {
-  height: 76px;
-}
-footer .container .copy {
+footer .container .copyright {
   float: left;
   font-size: 0;
 }
-footer .container .copy li {
+footer .container .copyright li {
   display: inline-block;
   color: #666d89;
   font-size: 12px;
+  line-height: 76px;
 }
-footer .container .copy li:after {
+footer .container .copyright li:after {
   display: inline-block;
   width: 2px;
   height: 2px;
@@ -408,8 +350,12 @@ footer .container .copy li:after {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-footer .container .copy li:last-child:after {
+footer .container .copyright li:last-child:after {
   display: none;
+}
+footer .container .social {
+  float: right;
+  margin-top: 22px;
 }
 
 .navigation {
@@ -440,6 +386,63 @@ footer .container .copy li:last-child:after {
 .navigation li a {
   color: #666d89;
   text-decoration: none;
+}
+
+.social {
+  font-size: 0;
+}
+.social li {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  border: 1px solid #666d89;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.social li:hover {
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+}
+.social li:hover:first-child a {
+  background-position: 0 -14px;
+}
+.social li:hover:nth-child(2) a {
+  background-position: 0 -42px;
+}
+.social li:hover:nth-child(3) a {
+  background-position: 0 -96px;
+}
+.social li:hover:last-child a {
+  background-position: 0 -70px;
+}
+.social li a {
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin: 8px auto;
+  background-image: url(../../images/social/social.png);
+  background-repeat: no-repeat;
+}
+.social li:first-child a {
+  width: 8px;
+}
+.social li:nth-child(2) a {
+  background-position: 0 -28px;
+}
+.social li:nth-child(3) a {
+  height: 12px;
+  background-position: 0 -84px;
+}
+.social li:last-child {
+  margin-right: 0;
+}
+.social li:last-child a {
+  background-position: 0 -56px;
 }
 
 .slider {
@@ -485,22 +488,22 @@ footer .container .copy li:last-child:after {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.service .container .art {
+.service .container .service-example {
   margin-top: 38px;
   font-size: 0;
 }
-.service .container .art figure {
+.service .container .service-example figure {
   width: 300px;
   display: inline-block;
   margin-right: 13px;
 }
-.service .container .art figure::last-child {
+.service .container .service-example figure::last-child {
   margin-right: 0;
 }
-.service .container .art figure img {
+.service .container .service-example figure img {
   float: left;
 }
-.service .container .art figure figcaption {
+.service .container .service-example figure figcaption {
   float: right;
   width: 220px;
 }
@@ -518,11 +521,16 @@ footer .container .copy li:last-child:after {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.portfolio .container div {
+.portfolio .container .portfolio-gallery {
   width: 939px;
   font-size: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  cursor: default;
 }
-.portfolio .container div figure {
+.portfolio .container .portfolio-gallery figure {
   display: inline-block;
   width: 220px;
   height: 188px;
@@ -531,16 +539,16 @@ footer .container .copy li:last-child:after {
   margin-right: 8px;
   margin-left: 8px;
 }
-.portfolio .container div figure:last-child {
+.portfolio .container .portfolio-gallery figure:last-child {
   margin-right: 0px;
 }
-.portfolio .container div figure:first-child {
+.portfolio .container .portfolio-gallery figure:first-child {
   margin-left: 0px;
 }
-.portfolio .container div figure img {
+.portfolio .container .portfolio-gallery figure img {
   width: 100%;
 }
-.portfolio .container div figure figcaption {
+.portfolio .container .portfolio-gallery figure figcaption {
   position: absolute;
   display: block;
   -webkit-transition-property: all;
@@ -548,19 +556,20 @@ footer .container .copy li:last-child:after {
   -o-transition-property: all;
   transition-property: all;
 }
-.portfolio .container div figure figcaption p {
+.portfolio .container .portfolio-gallery figure figcaption p {
   padding: 10px 10px;
   font-size: 12px;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   line-height: 20px;
   text-align: justify;
+  color: #45100E;
 }
-.portfolio .container div .slow-visible:hover figcaption {
+.portfolio .container .portfolio-gallery .portfolio-slow-visible:hover figcaption {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-.portfolio .container div .slow-visible figcaption {
+.portfolio .container .portfolio-gallery .portfolio-slow-visible figcaption {
   top: 0px;
   left: 0px;
   width: 100%;
@@ -573,16 +582,16 @@ footer .container .copy li:last-child:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-.portfolio .container div .diagonal {
+.portfolio .container .portfolio-gallery .portfolio-diagonal {
   overflow: hidden;
 }
-.portfolio .container div .diagonal:hover figcaption {
+.portfolio .container .portfolio-gallery .portfolio-diagonal:hover figcaption {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
   width: 220px;
   height: 188px;
 }
-.portfolio .container div .diagonal figcaption {
+.portfolio .container .portfolio-gallery .portfolio-diagonal figcaption {
   top: 0px;
   left: 0px;
   width: 0;
@@ -595,13 +604,13 @@ footer .container .copy li:last-child:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-.portfolio .container div .side-panel {
+.portfolio .container .portfolio-gallery .portfolio-side-panel {
   overflow: hidden;
 }
-.portfolio .container div .side-panel:hover figcaption {
+.portfolio .container .portfolio-gallery .portfolio-side-panel:hover figcaption {
   left: 0;
 }
-.portfolio .container div .side-panel figcaption {
+.portfolio .container .portfolio-gallery .portfolio-side-panel figcaption {
   top: 0px;
   left: -220px;
   width: 100%;
@@ -628,24 +637,31 @@ footer .container .copy li:last-child:after {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.about .container .people {
+.about .container .about-people {
   display: inline-block;
   margin-top: 51px;
   font-size: 0;
 }
-.about .container .people figure {
+.about .container .about-people figure {
   display: inline-block;
   width: 300px;
   margin-right: 15px;
 }
-.about .container .people figure:last-child {
+.about .container .about-people figure:last-child {
   margin-right: 0px;
 }
-.about .container .people figure figcaption {
+.about .container .about-people figure img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+.about .container .about-people figure figcaption {
   padding-top: 20px;
 }
-.about .container .people figure figcaption ul {
-  float: left;
+.about .container .about-people figure figcaption .social {
+  margin-top: 30px;
 }
 
 .quote {
@@ -670,6 +686,11 @@ footer .container .copy li:last-child:after {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 .quote .container form button {
   float: right;
@@ -975,11 +996,11 @@ img.rsImg {
 }
 
 .grab-cursor {
-  cursor: url(../../images/grab.png) 8 8, move;
+  cursor: url(../../images/slide/grab.png) 8 8, move;
 }
 
 .grabbing-cursor {
-  cursor: url(../../images/grabbing.png) 8 8, move;
+  cursor: url(../../images/slide/grabbing.png) 8 8, move;
 }
 
 .rsNoDrag {
@@ -994,7 +1015,7 @@ img.rsImg {
   height: 100%;
   display: block;
   z-index: 20;
-  background: url(../../images/blank.gif);
+  background: url(../../images/slide/blank.gif);
 }
 
 /******************************
@@ -1456,7 +1477,7 @@ img.rsImg {
   -webkit-transition: .3s;
   -moz-transition: .3s;
   transition: .3s;
-  background: url(../../images/slide/sprite-slide.png) no-repeat 0 -40px;
+  background: url("../../images/slide/sprite-slide.png") no-repeat 0 -40px;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.75);
   *background-color: #000;
@@ -1511,7 +1532,7 @@ img.rsImg {
 .rsDefault .rsPreloader {
   width: 20px;
   height: 20px;
-  background-image: url(../../images/slide/sprite-slide.png);
+  background-image: url("../../images/slide/sprite-slide.png");
   left: 50%;
   top: 50%;
   margin-left: -10px;
