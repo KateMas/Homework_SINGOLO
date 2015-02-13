@@ -8,6 +8,7 @@ footer {
 		.copyright {
 			float:left;			
 			font-size:0;
+			@include user-select(none);
 			li {
 				display:inline-block;
 				color: #666d89;			

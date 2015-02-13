@@ -3,6 +3,7 @@
 	font-size: 0;
 	font-family: 'Lato', sans-serif;
 	font-weight: normal;
+	@include user-select(none);
 	li {
 		display: inline-block; 
 		margin-right: 9px;

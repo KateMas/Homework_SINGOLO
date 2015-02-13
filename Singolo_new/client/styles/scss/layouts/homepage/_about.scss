@@ -8,6 +8,7 @@
 		padding-top: 67px;
 		padding-bottom: 67px;
 		@include box-sizing(border-box);
+		@include user-select(none);
 		.about-people {
 			display: inline-block;
 			margin-top:51px;
@@ -18,9 +19,6 @@
 				margin-right:15px;
 				&:last-child {
 					margin-right:0px;
-				}
-				img {
-					@include user-select(none);
 				}
 				figcaption {
 					padding-top:20px;

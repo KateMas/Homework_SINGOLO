@@ -4,11 +4,6 @@
 @import "compass/utilities/general/clearfix";
 @import "compass/utilities/sprites";
 
-//$social-layout: horizontal;
-//@import "social/*.png";
-
-//@include all-social-sprites;
-
 //fonts
 @import "fonts/lato";
 
@@ -20,8 +15,6 @@
 @import "base";
 
 //components
-@import "components/text";
-@import "components/title";
 @import "components/input-home";
 @import "components/textarea-home";
 
