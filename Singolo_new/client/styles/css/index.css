@@ -715,6 +715,7 @@ footer .container .social {
 }
 .quote .container form button {
   float: right;
+  height: 30px;
   margin-top: 10px;
   padding: 5px;
   border: 2px solid #aa3b3e;
