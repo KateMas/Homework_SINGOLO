@@ -8,7 +8,6 @@
 		padding-bottom: 67px;
 		@include box-sizing(border-box);
 		@include clearfix;
-		@include user-select(none);
 		form {
 			float: left;
 			width: 619px;
@@ -16,6 +15,7 @@
 			font-family: 'Lato', sans-serif;
 			font-weight: normal;
 			font-size: 12px;
+			@include user-select(none);
 			button {
 				float: right;
 				height: 30px;

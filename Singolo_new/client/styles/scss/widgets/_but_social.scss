@@ -7,9 +7,7 @@
 		height: 32px;
 		margin-right: 8px;
 		border:1px solid #666d89;
-		@include border-radius (50%); 
-		@include transition-property (border,width,height);
-		@include transition-duration (1000ms);
+		@include border-radius (50%); 		
 		&:hover {
  			width: 30px;
  			height: 30px;
@@ -17,22 +15,22 @@
  			cursor:pointer;
  			&:first-child {
  				a {
- 					@extend.social-fb-dark;
+ 					@extend.social-dark-fb-dark;
  				}
  			}
  			&:nth-child(2) {
  				a {
- 					@extend.social-g-dark;
+ 					@extend.social-dark-g-dark;
  				}
  			}
  			&:nth-child(3) {
  				a {
- 					@extend.social-tw-dark;
+ 					@extend.social-dark-tw-dark;
  				}
  			}
  			&:last-child {
  				a {
- 					@extend.social-in-dark;
+ 					@extend.social-dark-in-dark;
  				}
  			}
  		}
@@ -43,6 +41,8 @@
 			margin: 8px auto;
 			background-image:url(../../images/social/social.png);
 			background-repeat: no-repeat;
+			@include transition-property (background-image);
+			@include transition-duration (400ms);
 			}
 			&:first-child{
 				a {

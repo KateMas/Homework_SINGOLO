@@ -4,10 +4,11 @@ textarea {
 	padding-left:16px;
 	padding-top:15px;
 	border:none;
-	@include border-radius (5px);
 	outline:none;
 	background-color: #ca4549;
 	resize:none;
+	@include border-radius (5px);
+	@include user-select(none);
 	@include placeholder('Lato', normal, 12px, #f48c8f);
 	&:focus {
 		background-color: #e7b9ba;
