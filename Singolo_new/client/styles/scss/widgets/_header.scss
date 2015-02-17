@@ -50,65 +50,8 @@ header {
 					span {
 						color: #db4d50;
 					}
-					a {
-						text-decoration:none;
-						text-transform: uppercase;
-						color:#ffffff;
-					}
 				}
 			}	
 		}
-
-
-		/* .singolo {
-			float:left;
-			li {			
-				font-size: 25px;
-				line-height:90px;
-				span {
-					color: #db4d50;
-				}
-				a {
-					text-decoration:none;
-					text-transform: uppercase;
-					color:#ffffff;
-				}
-			}
-		}	
-		.menu {
-			float:right;
-			font-size:0;
-			li {
-				display:inline-block;
-				font-size: 12px;
-				line-height:90px;
-				&:after {
-					display: inline-block;
-					width: 2px;
-					height: 2px;
-					margin-left:16px;
-					margin-right:16px;
-					margin-bottom: 3px;
-					background-color: #3d4253;
-					content: "";
-					@include border-radius (50%);							
-				}
-				&:last-child {
-					&:after {
-						display: none;
-					}
-				}
-				a {
-					text-decoration:none;
-					text-transform: uppercase;
-					color:#ffffff;
-					@include transition-property (color);
-					@include transition-duration (200ms);
-					&:hover {
-					color: #eb5055; 
-					}
-				}	
-			}
-		}  */
 	}	
 }

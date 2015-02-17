@@ -76,7 +76,7 @@
 .rsDefault .rsArrowIcn:hover {
 	background-color: rgba(0,0,0,0.9);
 } */
-.rsDefault .rsArrowRight .rsArrowIcn {		
+.rsDefault .rsArrowIcn {		
 	width: 32px;
 	height: 32px;
 	top: 50%;
@@ -87,34 +87,24 @@
 	position: absolute;	
 	cursor: pointer;
 	background: url('../../images/slide/sprite-slide.png') no-repeat;
-	@include transition-duration (100ms);
-
+	@include transition (background);
+	@include transition-delay (400ms);
 }
-.rsDefault .rsArrowIcn:hover {
-	background-position: 0 -40px;
+.rsDefault .rsArrowRight .rsArrowIcn {
+	&:hover {
+		background-position: 0 -40px;
+	}
 }
-.rsDefault .rsArrowLeft .rsArrowIcn {		
-	width: 32px;
-	height: 32px;
-	top: 50%;
-	left: 50%;
-	margin-top:-16px;	
-	margin-left: -16px;
-
-	position: absolute;	
-	cursor: pointer;
-	background: url('../../images/slide/sprite-slide.png') no-repeat;
-
+.rsDefault .rsArrowLeft .rsArrowIcn {	
 	-moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
 	-webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
-	@include transition-duration (100ms);
+	&:hover {
+		background-position: 0 -40px;
+	}
+}
 
-}
-.rsDefault .rsArrowIcn:hover {
-	background-position: 0 -40px;
-}
 
 /*  .rsDefault.rsHor .rsArrowLeft .rsArrowIcn { background-position: -64px -32px; }
 .rsDefault.rsHor .rsArrowRight .rsArrowIcn { background-position: -64px -64px; }

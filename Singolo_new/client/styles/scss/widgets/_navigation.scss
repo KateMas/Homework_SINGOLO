@@ -11,7 +11,9 @@
 		border:1px solid #666d89;
 		font-size: 12px;
 		line-height: 20px;
+		cursor: pointer;
 		@include border-radius (5px);
+		@include transition-duration (200ms);
 		&:hover {					
 			border:1px solid #ffffff;
 			a {

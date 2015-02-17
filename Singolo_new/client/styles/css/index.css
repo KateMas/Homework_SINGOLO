@@ -290,58 +290,6 @@ header {
   user-select: none;
   cursor: default;
 }
-header .container {
-  /* .singolo {
-  	float:left;
-  	li {			
-  		font-size: 25px;
-  		line-height:90px;
-  		span {
-  			color: #db4d50;
-  		}
-  		a {
-  			text-decoration:none;
-  			text-transform: uppercase;
-  			color:#ffffff;
-  		}
-  	}
-  }	
-  .menu {
-  	float:right;
-  	font-size:0;
-  	li {
-  		display:inline-block;
-  		font-size: 12px;
-  		line-height:90px;
-  		&:after {
-  			display: inline-block;
-  			width: 2px;
-  			height: 2px;
-  			margin-left:16px;
-  			margin-right:16px;
-  			margin-bottom: 3px;
-  			background-color: #3d4253;
-  			content: "";
-  			@include border-radius (50%);							
-  		}
-  		&:last-child {
-  			&:after {
-  				display: none;
-  			}
-  		}
-  		a {
-  			text-decoration:none;
-  			text-transform: uppercase;
-  			color:#ffffff;
-  			@include transition-property (color);
-  			@include transition-duration (200ms);
-  			&:hover {
-  			color: #eb5055; 
-  			}
-  		}	
-  	}
-  }  */
-}
 header .container .singolo {
   font-size: 0;
 }
@@ -395,11 +343,6 @@ header .container .singolo li:first-child:after {
 }
 header .container .singolo li:first-child span {
   color: #db4d50;
-}
-header .container .singolo li:first-child a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 footer {
@@ -468,11 +411,16 @@ footer .container .social {
   border: 1px solid #666d89;
   font-size: 12px;
   line-height: 20px;
+  cursor: pointer;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
 }
 .navigation li:hover {
   border: 1px solid #ffffff;
@@ -521,8 +469,7 @@ footer .container .social {
   width: 14px;
   height: 14px;
   margin: 8px auto;
-  background-image: url(../../images/social/social.png);
-  background-repeat: no-repeat;
+  background-image: url(../../images/social/social.png) no-repeat;
 }
 .social li:first-child a {
   width: 8px;
@@ -1200,7 +1147,7 @@ img.rsImg {
 .rsDefault .rsArrowIcn:hover {
 	background-color: rgba(0,0,0,0.9);
 } */
-.rsDefault .rsArrowRight .rsArrowIcn {
+.rsDefault .rsArrowIcn {
   width: 32px;
   height: 32px;
   top: 50%;
@@ -1210,37 +1157,27 @@ img.rsImg {
   position: absolute;
   cursor: pointer;
   background: url("../../images/slide/sprite-slide.png") no-repeat;
-  -webkit-transition-duration: 100ms;
-  -moz-transition-duration: 100ms;
-  -o-transition-duration: 100ms;
-  transition-duration: 100ms;
+  -webkit-transition: background;
+  -moz-transition: background;
+  -o-transition: background;
+  transition: background;
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
 }
 
-.rsDefault .rsArrowIcn:hover {
+.rsDefault .rsArrowRight .rsArrowIcn:hover {
   background-position: 0 -40px;
 }
 
 .rsDefault .rsArrowLeft .rsArrowIcn {
-  width: 32px;
-  height: 32px;
-  top: 50%;
-  left: 50%;
-  margin-top: -16px;
-  margin-left: -16px;
-  position: absolute;
-  cursor: pointer;
-  background: url("../../images/slide/sprite-slide.png") no-repeat;
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  -webkit-transition-duration: 100ms;
-  -moz-transition-duration: 100ms;
-  -o-transition-duration: 100ms;
-  transition-duration: 100ms;
 }
-
-.rsDefault .rsArrowIcn:hover {
+.rsDefault .rsArrowLeft .rsArrowIcn:hover {
   background-position: 0 -40px;
 }
 
