@@ -83,26 +83,19 @@
 	left: 50%;
 	margin-top:-16px;	
 	margin-left: -16px;
-
 	position: absolute;	
 	cursor: pointer;
-	background: url('../../images/slide/sprite-slide.png') no-repeat;
-	@include transition (background);
-	@include transition-delay (400ms);
-}
-.rsDefault .rsArrowRight .rsArrowIcn {
+	background-image: url('../../images/slide/pointer.png');
+	background-repeat: no-repeat;
+	@include opacity (0.3);
+	@include transition-property (all);
+	@include transition-duration (400ms);
 	&:hover {
-		background-position: 0 -40px;
+		@include opacity (1);
 	}
 }
 .rsDefault .rsArrowLeft .rsArrowIcn {	
-	-moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
-	&:hover {
-		background-position: 0 -40px;
-	}
+	@include transform (rotate(180deg));
 }
 
 

@@ -417,6 +417,10 @@ footer .container .social {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
   -webkit-transition-duration: 200ms;
   -moz-transition-duration: 200ms;
   -o-transition-duration: 200ms;
@@ -453,10 +457,14 @@ footer .container .social {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  -webkit-transition-duration: 100ms;
-  -moz-transition-duration: 100ms;
-  -o-transition-duration: 100ms;
-  transition-duration: 100ms;
+  -webkit-transition-property: border, width, height;
+  -moz-transition-property: border, width, height;
+  -o-transition-property: border, width, height;
+  transition-property: border, width, height;
+  -webkit-transition-duration: 1000ms;
+  -moz-transition-duration: 1000ms;
+  -o-transition-duration: 1000ms;
+  transition-duration: 1000ms;
 }
 .social li:hover {
   width: 30px;
@@ -469,7 +477,8 @@ footer .container .social {
   width: 14px;
   height: 14px;
   margin: 8px auto;
-  background-image: url(../../images/social/social.png) no-repeat;
+  background-image: url(../../images/social/social.png);
+  background-repeat: no-repeat;
 }
 .social li:first-child a {
   width: 8px;
@@ -1156,29 +1165,30 @@ img.rsImg {
   margin-left: -16px;
   position: absolute;
   cursor: pointer;
-  background: url("../../images/slide/sprite-slide.png") no-repeat;
-  -webkit-transition: background;
-  -moz-transition: background;
-  -o-transition: background;
-  transition: background;
-  -webkit-transition-delay: 400ms;
-  -moz-transition-delay: 400ms;
-  -o-transition-delay: 400ms;
-  transition-delay: 400ms;
+  background-image: url("../../images/slide/pointer.png");
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 400ms;
+  -moz-transition-duration: 400ms;
+  -o-transition-duration: 400ms;
+  transition-duration: 400ms;
 }
-
-.rsDefault .rsArrowRight .rsArrowIcn:hover {
-  background-position: 0 -40px;
+.rsDefault .rsArrowIcn:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
 }
 
 .rsDefault .rsArrowLeft .rsArrowIcn {
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-.rsDefault .rsArrowLeft .rsArrowIcn:hover {
-  background-position: 0 -40px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /*  .rsDefault.rsHor .rsArrowLeft .rsArrowIcn { background-position: -64px -32px; }

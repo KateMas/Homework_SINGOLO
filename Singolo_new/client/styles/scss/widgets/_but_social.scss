@@ -8,7 +8,8 @@
 		margin-right: 8px;
 		border:1px solid #666d89;
 		@include border-radius (50%); 
-		@include transition-duration (100ms);
+		@include transition-property (border,width,height);
+		@include transition-duration (1000ms);
 		&:hover {
  			width: 30px;
  			height: 30px;
@@ -40,7 +41,8 @@
 			width: 14px;
 			height: 14px;
 			margin: 8px auto;
-			background-image:url(../../images/social/social.png) no-repeat;
+			background-image:url(../../images/social/social.png);
+			background-repeat: no-repeat;
 			}
 			&:first-child{
 				a {

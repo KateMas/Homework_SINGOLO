@@ -13,6 +13,7 @@
 		line-height: 20px;
 		cursor: pointer;
 		@include border-radius (5px);
+		@include transition-property (all);
 		@include transition-duration (200ms);
 		&:hover {					
 			border:1px solid #ffffff;
