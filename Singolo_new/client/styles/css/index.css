@@ -55,6 +55,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+.social-sprite, .social-fb-dark, .social li:hover:first-child a, .social-fb, .social li:first-child a, .social-g-dark, .social li:hover:nth-child(2) a, .social-g, .social li:nth-child(2) a, .social-in-dark, .social li:hover:last-child a, .social-in, .social li:last-child a, .social-tw-dark, .social li:hover:nth-child(3) a, .social-tw, .social li:nth-child(3) a {
+  background: url('../../images/social-s212f378cff.png') no-repeat;
+}
+
+.social-fb-dark, .social li:hover:first-child a {
+  background-position: 0 -94px;
+}
+
+.social-fb, .social li:first-child a {
+  background-position: 0 -66px;
+}
+
+.social-g-dark, .social li:hover:nth-child(2) a {
+  background-position: 0 -26px;
+}
+
+.social-g, .social li:nth-child(2) a {
+  background-position: 0 0;
+}
+
+.social-in-dark, .social li:hover:last-child a {
+  background-position: 0 -80px;
+}
+
+.social-in, .social li:last-child a {
+  background-position: 0 -52px;
+}
+
+.social-tw-dark, .social li:hover:nth-child(3) a {
+  background-position: 0 -40px;
+}
+
+.social-tw, .social li:nth-child(3) a {
+  background-position: 0 -14px;
+}
+
 @font-face {
   font-family: "Lato-Black";
   src: url('fonts/../../../fonts/lato-black/Lato-Black.ttf') format('truetype'), url('fonts/../../../fonts/lato-black/Lato-Black.eot') format('embedded-opentype'), url('fonts/../../../fonts/lato-black/Lato-Black.woff') format('woff'), url('fonts/../../../fonts/lato-black/Lato-Black.svg') format('svg'), url('fonts/../../../fonts/lato-black/lato-Black.otf') format('opentype');
@@ -422,18 +458,6 @@ footer .container .social {
   height: 30px;
   border: 2px solid black;
 }
-.social li:hover:first-child a {
-  background-position: 0 -14px;
-}
-.social li:hover:nth-child(2) a {
-  background-position: 0 -42px;
-}
-.social li:hover:nth-child(3) a {
-  background-position: 0 -96px;
-}
-.social li:hover:last-child a {
-  background-position: 0 -70px;
-}
 .social li a {
   display: block;
   width: 14px;
@@ -445,26 +469,19 @@ footer .container .social {
 .social li:first-child a {
   width: 8px;
 }
-.social li:nth-child(2) a {
-  background-position: 0 -28px;
-}
 .social li:nth-child(3) a {
   height: 12px;
-  background-position: 0 -84px;
 }
 .social li:last-child {
   margin-right: 0;
 }
-.social li:last-child a {
-  background-position: 0 -56px;
-}
 
-.slider {
+body.homepage .slider {
   width: 100%;
   border-bottom: 10px solid #ea676b;
   background-color: #eb5055;
 }
-.slider .royalSlider {
+body.homepage .slider .royalSlider {
   width: 939px !important;
   height: 595px;
   margin: 0 auto;
@@ -472,22 +489,21 @@ footer .container .social {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.slider .royalSlider .rsOverflow.grab-cursor {
+body.homepage .slider .royalSlider .rsOverflow.grab-cursor {
   margin: 0 auto;
   background-color: #eb5055 !important;
 }
-.slider .royalSlider .rsOverflow.grab-cursor .rsSlide .rsImg .rsMainSlideImage {
+body.homepage .slider .royalSlider .rsOverflow.grab-cursor .rsSlide .rsImg .rsMainSlideImage {
   width: 797px !important;
   margin: auto !important;
 }
-.slider .rsDefault, .slider .rsDefault .rsOverflow, .slider .rsDefault .rsSlide, .slider .rsDefault .rsVideoFrameHolder, .slider .rsDefault .rsThumbs {
+body.homepage .slider .rsDefault, body.homepage .slider .rsDefault .rsOverflow, body.homepage .slider .rsDefault .rsSlide, body.homepage .slider .rsDefault .rsVideoFrameHolder, body.homepage .slider .rsDefault .rsThumbs {
   background: #eb5055 !important;
 }
-.slider .rsDefault .rsArrow {
+body.homepage .slider .rsDefault .rsArrow {
   width: 0;
 }
-
-.service {
+body.homepage .service {
   width: 100%;
   border-bottom: 7px solid #ffffff;
   background-color: #f2f2f2;
@@ -495,26 +511,26 @@ footer .container .social {
   overflow: hidden;
   *zoom: 1;
 }
-.service .container {
+body.homepage .service .container {
   padding-top: 67px;
   padding-bottom: 67px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.service .container .service-example {
+body.homepage .service .container .service-example {
   margin-top: 38px;
   font-size: 0;
 }
-.service .container .service-example figure {
+body.homepage .service .container .service-example figure {
   width: 300px;
   display: inline-block;
   margin-right: 13px;
 }
-.service .container .service-example figure::last-child {
+body.homepage .service .container .service-example figure::last-child {
   margin-right: 0;
 }
-.service .container .service-example figure img {
+body.homepage .service .container .service-example figure img {
   float: left;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -523,25 +539,24 @@ footer .container .social {
   user-select: none;
   cursor: default;
 }
-.service .container .service-example figure figcaption {
+body.homepage .service .container .service-example figure figcaption {
   float: right;
   width: 220px;
 }
-
-.portfolio {
+body.homepage .portfolio {
   width: 100%;
   border-bottom: 5px solid #373b4a;
   background-color: #303441;
   color: #666d89;
 }
-.portfolio .container {
+body.homepage .portfolio .container {
   padding-top: 67px;
   padding-bottom: 67px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.portfolio .container .portfolio-gallery {
+body.homepage .portfolio .container .portfolio-gallery {
   width: 939px;
   font-size: 0;
   -webkit-user-select: none;
@@ -551,7 +566,7 @@ footer .container .social {
   user-select: none;
   cursor: default;
 }
-.portfolio .container .portfolio-gallery figure {
+body.homepage .portfolio .container .portfolio-gallery figure {
   display: inline-block;
   width: 220px;
   height: 188px;
@@ -560,16 +575,16 @@ footer .container .social {
   margin-right: 8px;
   margin-left: 8px;
 }
-.portfolio .container .portfolio-gallery figure:last-child {
+body.homepage .portfolio .container .portfolio-gallery figure:last-child {
   margin-right: 0px;
 }
-.portfolio .container .portfolio-gallery figure:first-child {
+body.homepage .portfolio .container .portfolio-gallery figure:first-child {
   margin-left: 0px;
 }
-.portfolio .container .portfolio-gallery figure img {
+body.homepage .portfolio .container .portfolio-gallery figure img {
   width: 100%;
 }
-.portfolio .container .portfolio-gallery figure figcaption {
+body.homepage .portfolio .container .portfolio-gallery figure figcaption {
   position: absolute;
   display: block;
   -webkit-transition-property: all;
@@ -577,7 +592,7 @@ footer .container .social {
   -o-transition-property: all;
   transition-property: all;
 }
-.portfolio .container .portfolio-gallery figure figcaption p {
+body.homepage .portfolio .container .portfolio-gallery figure figcaption p {
   padding: 10px 10px;
   font-size: 12px;
   font-family: 'Lato', sans-serif;
@@ -586,11 +601,11 @@ footer .container .social {
   text-align: justify;
   color: #45100E;
 }
-.portfolio .container .portfolio-gallery .portfolio-slow-visible:hover figcaption {
+body.homepage .portfolio .container .portfolio-gallery .portfolio-slow-visible:hover figcaption {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-.portfolio .container .portfolio-gallery .portfolio-slow-visible figcaption {
+body.homepage .portfolio .container .portfolio-gallery .portfolio-slow-visible figcaption {
   top: 0px;
   left: 0px;
   width: 100%;
@@ -603,16 +618,16 @@ footer .container .social {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-.portfolio .container .portfolio-gallery .portfolio-diagonal {
+body.homepage .portfolio .container .portfolio-gallery .portfolio-diagonal {
   overflow: hidden;
 }
-.portfolio .container .portfolio-gallery .portfolio-diagonal:hover figcaption {
+body.homepage .portfolio .container .portfolio-gallery .portfolio-diagonal:hover figcaption {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
   width: 220px;
   height: 188px;
 }
-.portfolio .container .portfolio-gallery .portfolio-diagonal figcaption {
+body.homepage .portfolio .container .portfolio-gallery .portfolio-diagonal figcaption {
   top: 0px;
   left: 0px;
   width: 0;
@@ -625,13 +640,13 @@ footer .container .social {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-.portfolio .container .portfolio-gallery .portfolio-side-panel {
+body.homepage .portfolio .container .portfolio-gallery .portfolio-side-panel {
   overflow: hidden;
 }
-.portfolio .container .portfolio-gallery .portfolio-side-panel:hover figcaption {
+body.homepage .portfolio .container .portfolio-gallery .portfolio-side-panel:hover figcaption {
   left: 0;
 }
-.portfolio .container .portfolio-gallery .portfolio-side-panel figcaption {
+body.homepage .portfolio .container .portfolio-gallery .portfolio-side-panel figcaption {
   top: 0px;
   left: -220px;
   width: 100%;
@@ -642,8 +657,7 @@ footer .container .social {
   -o-transition-duration: 800ms;
   transition-duration: 800ms;
 }
-
-.about {
+body.homepage .about {
   width: 100%;
   border-bottom: 7px solid #ffffff;
   background-color: #f2f2f2;
@@ -651,7 +665,7 @@ footer .container .social {
   overflow: hidden;
   *zoom: 1;
 }
-.about .container {
+body.homepage .about .container {
   padding-top: 67px;
   padding-bottom: 67px;
   -webkit-box-sizing: border-box;
@@ -664,33 +678,32 @@ footer .container .social {
   user-select: none;
   cursor: default;
 }
-.about .container .about-people {
+body.homepage .about .container .about-people {
   display: inline-block;
   margin-top: 51px;
   font-size: 0;
 }
-.about .container .about-people figure {
+body.homepage .about .container .about-people figure {
   display: inline-block;
   width: 300px;
   margin-right: 15px;
 }
-.about .container .about-people figure:last-child {
+body.homepage .about .container .about-people figure:last-child {
   margin-right: 0px;
 }
-.about .container .about-people figure figcaption {
+body.homepage .about .container .about-people figure figcaption {
   padding-top: 20px;
 }
-.about .container .about-people figure figcaption .social {
+body.homepage .about .container .about-people figure figcaption .social {
   margin-top: 30px;
 }
-
-.quote {
+body.homepage .quote {
   width: 100%;
   border-bottom: 6px solid #ea676b;
   background-color: #eb5055;
   color: #f0d8d9;
 }
-.quote .container {
+body.homepage .quote .container {
   padding-top: 67px;
   padding-bottom: 67px;
   -webkit-box-sizing: border-box;
@@ -705,7 +718,7 @@ footer .container .social {
   user-select: none;
   cursor: default;
 }
-.quote .container form {
+body.homepage .quote .container form {
   float: left;
   width: 619px;
   margin-top: 51px;
@@ -713,7 +726,7 @@ footer .container .social {
   font-weight: normal;
   font-size: 12px;
 }
-.quote .container form button {
+body.homepage .quote .container form button {
   float: right;
   height: 30px;
   margin-top: 10px;
@@ -730,47 +743,47 @@ footer .container .social {
   font-weight: bold;
   text-align: center;
 }
-.quote .container form button:hover {
+body.homepage .quote .container form button:hover {
   border: 3px solid #aa3b3e;
   background-color: #46292a;
   color: #000000;
   cursor: pointer;
 }
-.quote .container .contact {
+body.homepage .quote .container .contact {
   float: right;
   width: 301px;
   margin-top: 51px;
 }
-.quote .container .contact ul {
+body.homepage .quote .container .contact ul {
   margin-top: 29px;
 }
-.quote .container .contact ul li {
+body.homepage .quote .container .contact ul li {
   margin-bottom: 14px;
   padding-left: 23px;
   font-size: 12px;
   font-family: 'Lato', sans-serif;
   font-weight: normal;
 }
-.quote .container .contact ul li:first-child {
+body.homepage .quote .container .contact ul li:first-child {
   background-image: url(../../../client/images/contacts/location.png);
   background-position: 3px 0;
   background-repeat: no-repeat;
 }
-.quote .container .contact ul li:nth-child(2) {
+body.homepage .quote .container .contact ul li:nth-child(2) {
   background-image: url(../../../client/images/contacts/phone1.png);
   background-position: 1px 0;
   background-repeat: no-repeat;
 }
-.quote .container .contact ul li:last-child {
+body.homepage .quote .container .contact ul li:last-child {
   background-image: url(../../../client/images/contacts/envelope.png);
   background-position: 0;
   background-repeat: no-repeat;
 }
-.quote .container .contact ul li a {
+body.homepage .quote .container .contact ul li a {
   color: #f0d8d9;
   text-decoration: none;
 }
-.quote .container .contact ul li img {
+body.homepage .quote .container .contact ul li img {
   padding-right: 15px;
 }
 

@@ -7,7 +7,7 @@ header {
 	    @include clearfix;	
 	    @include user-select(none);
 		.container {
-			.singolo {
+			 .singolo {
 				float:left;
 				li {			
 					font-size: 25px;
@@ -22,7 +22,7 @@ header {
 					}
 				}
 			}	
-		.menu {
+					.menu {
 			float:right;
 			font-size:0;
 			li {
@@ -56,6 +56,6 @@ header {
 					}
 				}	
 			}
-		}
+		} 
 	}	
 }
