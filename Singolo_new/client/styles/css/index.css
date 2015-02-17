@@ -290,31 +290,68 @@ header {
   user-select: none;
   cursor: default;
 }
+header .container {
+  /* .singolo {
+  	float:left;
+  	li {			
+  		font-size: 25px;
+  		line-height:90px;
+  		span {
+  			color: #db4d50;
+  		}
+  		a {
+  			text-decoration:none;
+  			text-transform: uppercase;
+  			color:#ffffff;
+  		}
+  	}
+  }	
+  .menu {
+  	float:right;
+  	font-size:0;
+  	li {
+  		display:inline-block;
+  		font-size: 12px;
+  		line-height:90px;
+  		&:after {
+  			display: inline-block;
+  			width: 2px;
+  			height: 2px;
+  			margin-left:16px;
+  			margin-right:16px;
+  			margin-bottom: 3px;
+  			background-color: #3d4253;
+  			content: "";
+  			@include border-radius (50%);							
+  		}
+  		&:last-child {
+  			&:after {
+  				display: none;
+  			}
+  		}
+  		a {
+  			text-decoration:none;
+  			text-transform: uppercase;
+  			color:#ffffff;
+  			@include transition-property (color);
+  			@include transition-duration (200ms);
+  			&:hover {
+  			color: #eb5055; 
+  			}
+  		}	
+  	}
+  }  */
+}
 header .container .singolo {
-  float: left;
-}
-header .container .singolo li {
-  font-size: 25px;
-  line-height: 90px;
-}
-header .container .singolo li span {
-  color: #db4d50;
-}
-header .container .singolo li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-header .container .menu {
-  float: right;
   font-size: 0;
 }
-header .container .menu li {
+header .container .singolo li {
+  float: right;
   display: inline-block;
   font-size: 12px;
   line-height: 90px;
 }
-header .container .menu li:after {
+header .container .singolo li:after {
   display: inline-block;
   width: 2px;
   height: 2px;
@@ -329,10 +366,10 @@ header .container .menu li:after {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-header .container .menu li:last-child:after {
+header .container .singolo li:nth-child(2):after {
   display: none;
 }
-header .container .menu li a {
+header .container .singolo li a {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
@@ -345,8 +382,24 @@ header .container .menu li a {
   -o-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-header .container .menu li a:hover {
+header .container .singolo li a:hover {
   color: #eb5055;
+}
+header .container .singolo li:first-child {
+  float: left;
+  font-size: 25px;
+  line-height: 90px;
+}
+header .container .singolo li:first-child:after {
+  display: none;
+}
+header .container .singolo li:first-child span {
+  color: #db4d50;
+}
+header .container .singolo li:first-child a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 footer {
@@ -452,11 +505,16 @@ footer .container .social {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
+  -webkit-transition-duration: 100ms;
+  -moz-transition-duration: 100ms;
+  -o-transition-duration: 100ms;
+  transition-duration: 100ms;
 }
 .social li:hover {
   width: 30px;
   height: 30px;
   border: 2px solid black;
+  cursor: pointer;
 }
 .social li a {
   display: block;
@@ -1152,6 +1210,10 @@ img.rsImg {
   position: absolute;
   cursor: pointer;
   background: url("../../images/slide/sprite-slide.png") no-repeat;
+  -webkit-transition-duration: 100ms;
+  -moz-transition-duration: 100ms;
+  -o-transition-duration: 100ms;
+  transition-duration: 100ms;
 }
 
 .rsDefault .rsArrowIcn:hover {
@@ -1172,6 +1234,10 @@ img.rsImg {
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+  -webkit-transition-duration: 100ms;
+  -moz-transition-duration: 100ms;
+  -o-transition-duration: 100ms;
+  transition-duration: 100ms;
 }
 
 .rsDefault .rsArrowIcn:hover {

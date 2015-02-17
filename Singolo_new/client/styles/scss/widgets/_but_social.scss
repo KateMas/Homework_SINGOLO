@@ -8,10 +8,12 @@
 		margin-right: 8px;
 		border:1px solid #666d89;
 		@include border-radius (50%); 
+		@include transition-duration (100ms);
 		&:hover {
  			width: 30px;
  			height: 30px;
  			border:2px solid black;
+ 			cursor:pointer;
  			&:first-child {
  				a {
  					@extend.social-fb-dark;
