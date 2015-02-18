@@ -6,9 +6,9 @@ header {
 	font-weight: bold;
     @include clearfix;	
     @include user-select(none);
-	.container {
-		font-size: 0;
+	.container {				
 		.singolo {
+			height: 90px;
 			font-size:0;
 			li {
 				float:right;

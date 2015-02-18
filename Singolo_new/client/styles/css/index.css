@@ -306,10 +306,8 @@ header {
   user-select: none;
   cursor: default;
 }
-header .container {
-  font-size: 0;
-}
 header .container .singolo {
+  height: 90px;
   font-size: 0;
 }
 header .container .singolo li {
@@ -384,17 +382,17 @@ footer .container .copyright {
 }
 footer .container .copyright li {
   display: inline-block;
-  color: #666d89;
   font-size: 12px;
   line-height: 76px;
+  color: #666d89;
 }
 footer .container .copyright li:after {
   display: inline-block;
   width: 2px;
   height: 2px;
-  margin-left: 3px;
   margin-right: 3px;
   margin-bottom: 2px;
+  margin-left: 3px;
   background-color: #3d4253;
   content: "";
   -webkit-border-radius: 50%;
@@ -452,8 +450,8 @@ footer .container .social {
   color: #ffffff;
 }
 .navigation li a {
-  color: #666d89;
   text-decoration: none;
+  color: #666d89;
 }
 
 .social {
@@ -603,10 +601,10 @@ body.homepage .portfolio .container .portfolio-gallery {
   cursor: default;
 }
 body.homepage .portfolio .container .portfolio-gallery figure {
+  position: relative;
   display: inline-block;
   width: 220px;
   height: 188px;
-  position: relative;
   margin-top: 20px;
   margin-right: 20px;
 }
@@ -660,10 +658,10 @@ body.homepage .portfolio .container .portfolio-gallery .portfolio-diagonal {
   overflow: hidden;
 }
 body.homepage .portfolio .container .portfolio-gallery .portfolio-diagonal:hover figcaption {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
   width: 220px;
   height: 188px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
 }
 body.homepage .portfolio .container .portfolio-gallery .portfolio-diagonal figcaption {
   top: 0px;
@@ -772,16 +770,16 @@ body.homepage .quote .container form button {
   margin-top: 10px;
   padding: 5px;
   border: 2px solid #aa3b3e;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
   outline: none;
   background-color: #ca4549;
   color: #6a3739;
   font-weight: bold;
   text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 body.homepage .quote .container form button:hover {
   border: 3px solid #aa3b3e;
@@ -820,8 +818,8 @@ body.homepage .quote .container .contact ul li:last-child {
   background-repeat: no-repeat;
 }
 body.homepage .quote .container .contact ul li a {
-  color: #f0d8d9;
   text-decoration: none;
+  color: #f0d8d9;
 }
 body.homepage .quote .container .contact ul li img {
   padding-right: 15px;
@@ -1182,16 +1180,16 @@ img.rsImg {
 	background-color: rgba(0,0,0,0.9);
 } */
 .rsDefault .rsArrowIcn {
-  width: 32px;
-  height: 32px;
+  position: absolute;
   top: 50%;
   left: 50%;
+  width: 32px;
+  height: 32px;
   margin-top: -16px;
   margin-left: -16px;
-  position: absolute;
-  cursor: pointer;
   background-image: url("../../images/slide/pointer.png");
   background-repeat: no-repeat;
+  cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
   -webkit-transition-property: all;

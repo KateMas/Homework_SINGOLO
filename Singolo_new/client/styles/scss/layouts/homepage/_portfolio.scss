@@ -12,10 +12,10 @@
 			font-size: 0;
 			@include user-select(none);
 			figure {
+				position: relative;
 				display: inline-block;
 				width: 220px;
-				height: 188px;
-				position: relative;
+				height: 188px;				
 				margin-top:20px;
 				margin-right: 20px;
 				&:nth-child(4) {
@@ -65,9 +65,9 @@
 				overflow: hidden;
 				&:hover {
 					figcaption {
-						@include opacity(1);
 						width: 220px;
 						height: 188px;
+						@include opacity(1);
 					}
 				}			
 				figcaption {

@@ -21,13 +21,13 @@
 				height: 30px;
 				margin-top:10px;
 				padding:5px;
-				border:2px solid #aa3b3e;
-				@include border-radius (5px);
+				border:2px solid #aa3b3e;			
 				outline:none;
 				background-color: #ca4549;
 				color:#6a3739;
 				font-weight: bold;
 				text-align: center;
+				@include border-radius (5px);
 				&:hover {
 					border:3px solid #aa3b3e;
 					background-color: #46292a;
@@ -63,9 +63,9 @@
 						background-position: 0;
 						background-repeat: no-repeat;
 					}			
-					a {
-						color:#f0d8d9;
+					a {						
 						text-decoration: none;
+						color:#f0d8d9;
 					}
 					img {
 						padding-right:15px;
