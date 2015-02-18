@@ -8,15 +8,18 @@
 		padding-top: 67px;
 		padding-bottom: 67px;
 		@include box-sizing(border-box);
-		.service-example {
-			margin-top:38px;
+		.service-example {			
 			font-size: 0;
 			figure {
-				width: 300px;
 				display: inline-block;
-				margin-right: 13px;
-				&::last-child {
-					margin-right: 0;
+				width: 300px;
+				margin-top:38px;
+				margin-right: 20px;
+				&:nth-child(3) {
+					margin-right: 0px;
+				}
+				&:nth-child(6) {
+					margin-right: 0px;
 				}
 				img {
 					float: left;

@@ -101,7 +101,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body .container {
-  width: 939px;
+  width: 940px;
   margin: auto;
 }
 body .container h2 {
@@ -305,6 +305,9 @@ header {
   -ms-user-select: none;
   user-select: none;
   cursor: default;
+}
+header .container {
+  font-size: 0;
 }
 header .container .singolo {
   font-size: 0;
@@ -512,7 +515,7 @@ body.homepage .slider {
   background-color: #eb5055;
 }
 body.homepage .slider .royalSlider {
-  width: 939px !important;
+  width: 940px !important;
   height: 595px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
@@ -549,16 +552,19 @@ body.homepage .service .container {
   box-sizing: border-box;
 }
 body.homepage .service .container .service-example {
-  margin-top: 38px;
   font-size: 0;
 }
 body.homepage .service .container .service-example figure {
-  width: 300px;
   display: inline-block;
-  margin-right: 13px;
+  width: 300px;
+  margin-top: 38px;
+  margin-right: 20px;
 }
-body.homepage .service .container .service-example figure::last-child {
-  margin-right: 0;
+body.homepage .service .container .service-example figure:nth-child(3) {
+  margin-right: 0px;
+}
+body.homepage .service .container .service-example figure:nth-child(6) {
+  margin-right: 0px;
 }
 body.homepage .service .container .service-example figure img {
   float: left;
@@ -587,7 +593,7 @@ body.homepage .portfolio .container {
   box-sizing: border-box;
 }
 body.homepage .portfolio .container .portfolio-gallery {
-  width: 939px;
+  width: 100%;
   font-size: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -602,14 +608,16 @@ body.homepage .portfolio .container .portfolio-gallery figure {
   height: 188px;
   position: relative;
   margin-top: 20px;
-  margin-right: 8px;
-  margin-left: 8px;
+  margin-right: 20px;
 }
-body.homepage .portfolio .container .portfolio-gallery figure:last-child {
+body.homepage .portfolio .container .portfolio-gallery figure:nth-child(4) {
   margin-right: 0px;
 }
-body.homepage .portfolio .container .portfolio-gallery figure:first-child {
-  margin-left: 0px;
+body.homepage .portfolio .container .portfolio-gallery figure:nth-child(8) {
+  margin-right: 0px;
+}
+body.homepage .portfolio .container .portfolio-gallery figure:nth-child(12) {
+  margin-right: 0px;
 }
 body.homepage .portfolio .container .portfolio-gallery figure img {
   width: 100%;
@@ -710,7 +718,7 @@ body.homepage .about .container .about-people {
 body.homepage .about .container .about-people figure {
   display: inline-block;
   width: 300px;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 body.homepage .about .container .about-people figure:last-child {
   margin-right: 0px;
@@ -1163,7 +1171,6 @@ img.rsImg {
 	position: absolute;	
 	cursor: pointer;	
 	//background: url('../../images/rs-default.png');
-	background: url('../../images/slide/sprite-slide.png');
 
 	background-color: #000;
 	background-color: rgba(0,0,0,0.75);
@@ -1377,7 +1384,6 @@ img.rsImg {
   margin-left: -8px;
   position: absolute;
   cursor: pointer;
-  background: url("../../images/slide/sprite-slide.png");
 }
 
 .rsDefault.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn {
@@ -1505,7 +1511,6 @@ img.rsImg {
   margin: 6px;
   width: 32px;
   height: 32px;
-  background: url("../../images/slide/sprite-slide.png") 0 0;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.75);
   *background-color: #000;
@@ -1543,7 +1548,6 @@ img.rsImg {
   -webkit-transition: .3s;
   -moz-transition: .3s;
   transition: .3s;
-  background: url("../../images/slide/sprite-slide.png") no-repeat 0 -40px;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.75);
   *background-color: #000;
@@ -1580,7 +1584,6 @@ img.rsImg {
   margin: 6px;
   width: 32px;
   height: 32px;
-  background: url("../../images/slide/sprite-slide.png") -64px 0;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.75);
   *background-color: #000;
@@ -1598,7 +1601,6 @@ img.rsImg {
 .rsDefault .rsPreloader {
   width: 20px;
   height: 20px;
-  background-image: url("../../images/slide/sprite-slide.png");
   left: 50%;
   top: 50%;
   margin-left: -10px;

@@ -7,6 +7,7 @@ header {
     @include clearfix;	
     @include user-select(none);
 	.container {
+		font-size: 0;
 		.singolo {
 			font-size:0;
 			li {

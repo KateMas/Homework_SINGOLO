@@ -65,7 +65,6 @@
 	position: absolute;	
 	cursor: pointer;	
 	//background: url('../../images/rs-default.png');
-	background: url('../../images/slide/sprite-slide.png');
 
 	background-color: #000;
 	background-color: rgba(0,0,0,0.75);
@@ -252,7 +251,7 @@
 	position: absolute;	
 	cursor: pointer;	
 	//background: url('../../images/rs-default.png');
-	background: url('../../images/slide/sprite-slide.png');
+	//background: url('../../images/slide/sprite-slide.png');
 }
 
 .rsDefault.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -128px -32px; }
@@ -375,7 +374,7 @@
 	height: 32px;
 
 	//background: url('../../images/rs-default.png') 0 0;
-	background: url('../../images/slide/sprite-slide.png') 0 0;
+	//background: url('../../images/slide/sprite-slide.png') 0 0;
 	background-color: #000;
 	background-color: rgba(0,0,0,0.75);
 	*background-color: #000;
@@ -419,7 +418,7 @@
 	transition: .3s;
 
 	//background:url(../../images/rs-default.png) no-repeat 0 -32px;
-	background:url('../../images/slide/sprite-slide.png') no-repeat 0 -40px;
+	//background:url('../../images/slide/sprite-slide.png') no-repeat 0 -40px;
 	background-color: #000;
 	background-color: rgba(0,0,0,0.75);
 	*background-color: #000;
@@ -454,7 +453,7 @@
 	width: 32px;
 	height: 32px;
 	//background: url('../../images/rs-default.png') -64px 0;
-	background: url('../../images/slide/sprite-slide.png') -64px 0;
+	//background: url('../../images/slide/sprite-slide.png') -64px 0;
 	background-color: #000;
 	background-color: rgba(0,0,0,0.75);
 	*background-color: #000;
@@ -475,7 +474,7 @@
 	width:20px;
 	height:20px;
 	//background-image:url(../../images/preloader-white.gif);
-	background-image:url('../../images/slide/sprite-slide.png');
+	//background-image:url('../../images/slide/sprite-slide.png');
 	left:50%;
 	top:50%;
 	margin-left:-10px;
