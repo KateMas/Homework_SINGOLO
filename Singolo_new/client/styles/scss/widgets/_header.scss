@@ -48,6 +48,11 @@ header {
 					&:after {
 						display: none;
 					}
+					a {
+						&:hover{
+							color: #ffffff;
+						}	
+					}
 					span {
 						color: #db4d50;
 					}
