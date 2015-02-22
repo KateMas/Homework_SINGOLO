@@ -176,6 +176,7 @@ input:-ms-input-placeholder {
 }
 input:focus {
   background-color: #e7b9ba;
+  font-size: 12px;
   color: #7D3C3C;
   /* Firefox 19+ */
   /* Firefox 18- */
@@ -258,6 +259,7 @@ textarea:-ms-input-placeholder {
 }
 textarea:focus {
   background-color: #e7b9ba;
+  font-size: 12px;
   color: #7D3C3C;
   /* Firefox 19+ */
   /* Firefox 18- */
@@ -827,9 +829,6 @@ body.homepage .quote .container .contact ul li:last-child {
 body.homepage .quote .container .contact ul li a {
   text-decoration: none;
   color: #f0d8d9;
-}
-body.homepage .quote .container .contact ul li img {
-  padding-right: 15px;
 }
 
 /* v1.0.5 */

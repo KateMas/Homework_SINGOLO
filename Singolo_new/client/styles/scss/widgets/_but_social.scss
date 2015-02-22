@@ -43,28 +43,28 @@
 			background-repeat: no-repeat;
 			@include transition-property (background-image);
 			@include transition-duration (400ms);
-			}
-			&:first-child{
-				a {
-					width: 8px;
-					@extend.social-fb;
-				} 	 
-			}
-			&:nth-child(2) {
-				a {
-					@extend.social-g; 
-				}	
-			}
-			&:nth-child(3) {
-				a {
-					height: 12px; 
-					@extend.social-tw; 
-				}	
-			}
-			&:last-child {
-				margin-right: 0;
-				a {
-					@extend.social-in; 
+		}
+		&:first-child{
+			a {
+				width: 8px;
+				@extend.social-fb;
+			} 	 
+		}
+		&:nth-child(2) {
+			a {
+				@extend.social-g; 
+			}	
+		}
+		&:nth-child(3) {
+			a {
+				height: 12px; 
+				@extend.social-tw; 
+			}	
+		}
+		&:last-child {
+			margin-right: 0;
+			a {
+				@extend.social-in; 
 			}
 		}
 	}

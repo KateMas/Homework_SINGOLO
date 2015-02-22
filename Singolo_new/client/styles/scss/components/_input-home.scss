@@ -11,6 +11,7 @@ input {
 	@include placeholder('Lato', normal, 12px, #f48c8f);
 	&:focus {
 		background-color: #e7b9ba;
+		font-size: 12px;
 		color: #7D3C3C;
 		@include placeholder ('Lato', normal, 12px, transparent);
 		@include transition-duration (1000ms);

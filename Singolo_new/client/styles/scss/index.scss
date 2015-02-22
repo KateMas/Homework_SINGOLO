@@ -4,9 +4,9 @@
 @import "compass/utilities/general/clearfix";
 @import "compass/utilities/sprites";
 
+//sprites
 @import "social/*.png";
 @import "social-dark/*.png";
-
 @include all-social-sprites;
 @include all-social-dark-sprites;
 
@@ -33,5 +33,6 @@
 //layouts
 @import "layouts/body";
 
+//slider
 @import "lib/rs";
 @import "lib/rs-default";
