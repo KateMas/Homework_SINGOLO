@@ -129,7 +129,7 @@ body .container .text-small {
 }
 
 input {
-  width: 603px;
+  width: 100%;
   height: 38px;
   margin-bottom: 16px;
   padding-left: 16px;
@@ -147,6 +147,9 @@ input {
   -ms-user-select: none;
   user-select: none;
   cursor: default;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   /* Firefox 19+ */
   /* Firefox 18- */
 }
@@ -211,7 +214,7 @@ input:focus:-ms-input-placeholder {
 }
 
 textarea {
-  width: 603px;
+  width: 100%;
   height: 186px;
   padding-left: 16px;
   padding-top: 15px;
@@ -230,6 +233,9 @@ textarea {
   -ms-user-select: none;
   user-select: none;
   cursor: default;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   /* Firefox 19+ */
   /* Firefox 18- */
 }
@@ -789,9 +795,16 @@ body.homepage .quote .container form button {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 400ms;
+  -moz-transition-duration: 400ms;
+  -o-transition-duration: 400ms;
+  transition-duration: 400ms;
 }
 body.homepage .quote .container form button:hover {
-  border: 3px solid #aa3b3e;
   background-color: #46292a;
   color: #000000;
   cursor: pointer;

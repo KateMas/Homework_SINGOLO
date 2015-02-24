@@ -28,8 +28,9 @@
 				font-weight: bold;
 				text-align: center;
 				@include border-radius (5px);
+				@include transition-property (all);
+				@include transition-duration (400ms);
 				&:hover {
-					border:3px solid #aa3b3e;
 					background-color: #46292a;
 					color: #000000;
 					cursor: pointer;
