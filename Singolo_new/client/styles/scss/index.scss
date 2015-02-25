@@ -13,6 +13,10 @@
 //fonts
 @import "fonts/lato";
 
+//slider
+@import "lib/rs";
+@import "lib/rs-default";
+
 //mixins
 @import "mixins/user-select";
 @import "mixins/placeholder";
@@ -32,7 +36,3 @@
 
 //layouts
 @import "layouts/body";
-
-//slider
-@import "lib/rs";
-@import "lib/rs-default";

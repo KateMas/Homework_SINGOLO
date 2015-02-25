@@ -10,12 +10,19 @@ textarea {
 	@include border-radius (5px);
 	@include user-select(none);
 	@include box-sizing (border-box);
-	@include placeholder('Lato', normal, 12px, #f48c8f);
+	@include placeholder {
+		font-family: 'Lato', sans-serif;
+		font-weight: normal;
+		font-size: 12px;
+		color: #f48c8f
+	}
 	&:focus {
 		background-color: #e7b9ba;
 		font-size: 12px;
 		color: #7D3C3C;
-		@include placeholder ('Lato', normal, 12px, transparent);
+		@include placeholder {
+			color: transparent;
+		}
 		@include transition-duration (1000ms);
 	}
 }
