@@ -6,9 +6,7 @@
 
 //sprites
 @import "social/*.png";
-@import "social-dark/*.png";
 @include all-social-sprites;
-@include all-social-dark-sprites;
 
 //fonts
 @import "fonts/lato";
