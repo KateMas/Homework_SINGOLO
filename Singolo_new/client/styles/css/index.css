@@ -60,6 +60,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-repeat: no-repeat;
 }
 
+.services-icon-sprite, .services-icon-bolb, body.homepage .service .container .our-service figure span.bolb::before, .services-icon-bubble, body.homepage .service .container .our-service figure span.bubble::before, .services-icon-heart, body.homepage .service .container .our-service figure span.heart::before, .services-icon-pen, body.homepage .service .container .our-service figure span.pen::before, .services-icon-phone, body.homepage .service .container .our-service figure span.phone::before, .services-icon-star, body.homepage .service .container .our-service figure span.star::before {
+  background-image: url('../../images/services-icon-sa88b09c2f9.png');
+  background-repeat: no-repeat;
+}
+
 .social-fb, .social li:first-child a {
   background-position: 0 0;
 }
@@ -76,9 +81,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-position: 0 -42px;
 }
 
+.services-icon-bolb, body.homepage .service .container .our-service figure span.bolb::before {
+  background-position: 0 0;
+}
+
+.services-icon-bubble, body.homepage .service .container .our-service figure span.bubble::before {
+  background-position: 0 -32px;
+}
+
+.services-icon-heart, body.homepage .service .container .our-service figure span.heart::before {
+  background-position: 0 -60px;
+}
+
+.services-icon-pen, body.homepage .service .container .our-service figure span.pen::before {
+  background-position: 0 -88px;
+}
+
+.services-icon-phone, body.homepage .service .container .our-service figure span.phone::before {
+  background-position: 0 -120px;
+}
+
+.services-icon-star, body.homepage .service .container .our-service figure span.star::before {
+  background-position: 0 -152px;
+}
+
 @font-face {
   font-family: "Lato-Black";
-  src: url('../fonts/../../../fonts/lato-black/Lato-Black.ttf') format('truetype'), url('../fonts/../../../fonts/lato-black/Lato-Black.eot') format('embedded-opentype'), url('../fonts/../../../fonts/lato-black/Lato-Black.woff') format('woff'), url('../fonts/../../../fonts/lato-black/Lato-Black.svg') format('svg'), url('../fonts/../../../fonts/lato-black/lato-Black.otf') format('opentype');
+  src: url('../fonts/../../../client/fonts/lato-black/Lato-Black.ttf') format('truetype'), url('../fonts/../../../client/fonts/lato-black/Lato-Black.eot') format('embedded-opentype'), url('../fonts/../../../client/fonts/lato-black/Lato-Black.woff') format('woff'), url('../fonts/../../../client/fonts/lato-black/Lato-Black.svg') format('svg'), url('../fonts/../../../client/fonts/lato-black/lato-Black.otf') format('opentype');
 }
 /* v1.0.5 */
 /* Core RS CSS file. 95% of time you shouldn't change anything here. */
@@ -1319,6 +1348,59 @@ body.homepage .service .container .our-service figure:nth-child(3) {
 body.homepage .service .container .our-service figure:nth-child(6) {
   margin-right: 0px;
 }
+body.homepage .service .container .our-service figure span {
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 59px;
+  height: 59px;
+  border: 2px solid #666d89;
+  font-size: 0;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+body.homepage .service .container .our-service figure span:before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+}
+body.homepage .service .container .our-service figure span.pen::before {
+  top: 14px;
+  left: 14px;
+  width: 32px;
+  height: 32px;
+}
+body.homepage .service .container .our-service figure span.bolb::before {
+  top: 13px;
+  left: 18px;
+  width: 22px;
+  height: 32px;
+}
+body.homepage .service .container .our-service figure span.heart::before {
+  top: 17px;
+  left: 14px;
+  width: 32px;
+  height: 28px;
+}
+body.homepage .service .container .our-service figure span.phone::before {
+  top: 15px;
+  left: 18px;
+  width: 22px;
+  height: 32px;
+}
+body.homepage .service .container .our-service figure span.bubble::before {
+  top: 16px;
+  left: 14px;
+  width: 32px;
+  height: 28px;
+}
+body.homepage .service .container .our-service figure span.star::before {
+  top: 14px;
+  left: 14px;
+  width: 32px;
+  height: 31px;
+}
 body.homepage .service .container .our-service figure img {
   float: left;
   -webkit-user-select: none;
@@ -1329,7 +1411,7 @@ body.homepage .service .container .our-service figure img {
   cursor: default;
 }
 body.homepage .service .container .our-service figure figcaption {
-  float: right;
+  margin-left: 79px;
   width: 220px;
 }
 body.homepage .portfolio {

@@ -4,11 +4,11 @@
 	background-color: #f2f2f2;
 	color:#666d89;
 	@include clearfix;
-	.container {		
+	.container {
 		padding-top: 67px;
 		padding-bottom: 67px;
 		@include box-sizing(border-box);
-		.our-service {			
+		.our-service {
 			font-size: 0;
 			figure {
 				display: inline-block;
@@ -21,15 +21,83 @@
 				&:nth-child(6) {
 					margin-right: 0px;
 				}
+				span {
+					position: relative;
+					float:left;
+					display: inline-block;
+					width: 59px;
+					height: 59px;
+					border: 2px solid #666d89;
+					font-size: 0;
+					@include border-radius (50%);
+					&:before {
+						position: absolute;
+						display: inline-block;
+						content: "";
+					}
+					&.pen {
+						&::before {
+							top: 14px;
+							left: 14px;
+							width: 32px;
+							height: 32px;
+							@extend .services-icon-pen;
+						}
+					}
+					&.bolb {
+						&::before {
+							top: 13px;
+							left: 18px;
+							width: 22px;
+							height: 32px;
+							@extend .services-icon-bolb;
+						}
+					}
+					&.heart {
+						&::before {
+							top: 17px;
+							left: 14px;
+							width: 32px;
+							height: 28px;
+							@extend .services-icon-heart;
+						}
+					}
+					&.phone {
+						&::before {
+							top: 15px;
+							left: 18px;
+							width: 22px;
+							height: 32px;
+							@extend .services-icon-phone;
+						}
+					}
+					&.bubble {
+						&::before {
+							top: 16px;
+							left: 14px;
+							width: 32px;
+							height: 28px;
+							@extend .services-icon-bubble;
+						}
+					}&.star {
+						&::before {
+							top: 14px;
+							left: 14px;
+							width: 32px;
+							height: 31px;
+							@extend .services-icon-star;
+						}
+					}
+				}
 				img {
 					float: left;
 					@include user-select(none);
 				}
 				figcaption {
-					float: right;
+					margin-left: 79px;
 					width: 220px;
 				}
 			}
 		}
-	}	
-} 
+	}
+}
